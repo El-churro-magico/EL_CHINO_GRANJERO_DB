@@ -1,0 +1,78 @@
+Stencils
+
+
+---> EJEMPLOS DE SOLICITUDES DE AFILIACIONES
+
+
+{
+    "cedula": 117320554,
+    "name": "Daniel",
+    "lastName": "Camacho Gonzalez",
+    "businessName": "El Chino amoroso: SexShop",
+    "province": "Heredia",
+    "canton": "San Rafael",
+    "district": "Concepcion",
+    "address": "del Bar La Troja, 350 m noroeste",
+    "phoneN": 60131812,
+    "birthDate": "1999-01-15T00:00:00",
+    "sinpeN": 60131812,
+    "comment": "",
+    "status": "PENDING",
+    "password": "chupoYMaMoCrotolamo"
+}
+
+{
+    "cedula":208120011,
+    "name": "Sebatian",
+    "lastName": "Calderon Yock",
+    "businessName": "El Chino Religioso: Tocamiento de monaguillos",
+    "province": "Alajuela",
+    "canton": "Central",
+    "district": "El Roble",
+    "address": "en algun hueco de Alajuela",
+    "phoneN": 85401821,
+    "birthDate": "2000-12-03T00:00:00",
+    "sinpeN": 85401821,
+    "comment": "",
+    "status": "PENDING",
+    "password": "chupoYMaMoCrotolamo"
+
+}
+
+{
+    "cedula":305260005,
+    "name":"Tomas",
+    "lastName": "Malavassi Richmond",
+    "businessName": "El Chino Antartico: Venta de Helados",
+    "province": "Cartago",
+    "canton": "La Union",
+    "district": "San Rafael",
+    "address": "en algun hueco de Cartucho",
+    "phoneN": 84111278,
+    "birthDate": "2000-07-08T00:00:00",
+    "sinpeN": 84111278,
+    "comment": "",
+    "status": "PENDING",
+    "password": "chupoYMaMoCrotolamo"
+}
+
+{
+    "cedula":117930596,
+    "name":"Kevin",
+    "lastName": "Zeledon Salazar",
+    "businessName": "El Chino a La Moda: Venta de Joggers",
+    "province": "Alajuela",
+    "canton": "Central",
+    "district": "San Martin",
+    "address": "en algun hueco de Alajuela",
+    "phoneN": 84876944,
+    "birthDate": "2000-11-02T00:00:00",
+    "sinpeN": 84876944,
+    "comment": "",
+    "status": "PENDING",
+    "password": "chupoYMaMoCrotolamo"
+}
+
+
+---> EJEMPLOS DE SOLICITUDES DE LOGIN
+

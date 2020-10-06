@@ -4,13 +4,6 @@
 -- MySQL Workbench Forward Engineering
 use ELCHINOGRANJERO;
 
-
-alter table afiliaciones drop nombreNegocio;
-alter table productores add nombreNegocio varchar(50) not null;
-
-select * from afiliaciones;
-show columns from productores;
-
 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
@@ -41,6 +34,8 @@ CREATE TABLE IF NOT EXISTS `ELCHINOGRANJERO`.`PRODUCTORES` (
   `Num_Sinpe` INT NOT NULL,
   `Calificacion` FLOAT NOT NULL DEFAULT 5,
   `Lugares_Entrega` VARCHAR(200) NOT NULL,
+  `nombreNegocio` VARCHAR(32) NOT NULL,
+  `Password` VARCHAR(32) NOT NULL,
   PRIMARY KEY (`Cedula`),
   UNIQUE INDEX `Cedula_UNIQUE` (`Cedula` ASC) VISIBLE)
 ENGINE = InnoDB;
@@ -125,6 +120,8 @@ CREATE TABLE IF NOT EXISTS `ELCHINOGRANJERO`.`AFILIACIONES` (
   `Num_Sinpe` INT NOT NULL,
   `Comentario` VARCHAR(150) NOT NULL DEFAULT 5,
   `Estado` VARCHAR(15) NOT NULL,
+  `nombreNegocio` VARCHAR(50) NOT NULL,
+  `Password` VARCHAR(32) NOT NULL,
   PRIMARY KEY (`Cedula`),
   UNIQUE INDEX `Cedula_UNIQUE` (`Cedula` ASC) VISIBLE)
 ENGINE = InnoDB;
@@ -156,6 +153,19 @@ CREATE TABLE IF NOT EXISTS `ELCHINOGRANJERO`.`PEDIDOS` (
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
+-- -----------------------------------------------------
+-- Table `ELCHINOGRANJERO`.`TOKENS`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `ELCHINOGRANJERO`.`TOKENS` (
+  `Usuario` INT NOT NULL PRIMARY KEY,
+  `Token` VARCHAR(32) NULL,
+  `Tipo` VARCHAR(25) NULL,
+  CONSTRAINT `fk_tokProd`
+    FOREIGN KEY (`Usuario`)
+    REFERENCES `ELCHINOGRANJERO`.`PRODUCTORES` (`Cedula`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
+ENGINE = InnoDB;
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
