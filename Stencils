@@ -73,6 +73,58 @@ Stencils
     "password": "chupoYMaMoCrotolamo"
 }
 
+{
+    "cedula":317930596,
+    "name":"Papero",
+    "lastName": "McCormick",
+    "businessName": "El Papero: Venta de Pegamento para Zapatos",
+    "province": "Cartago",
+    "canton": "Central",
+    "district": "Oriental",
+    "address": "Residencial Gonzalez Angulo, donde pegue sol",
+    "phoneN": 2252521,
+    "birthDate": "1973-11-02T00:00:00",
+    "sinpeN": 82415214,
+    "comment": "",
+    "status": "PENDING",
+    "password": "huelerPiedra22"
+}
+
+{
+    "cedula":17454845,
+    "name":"Mejiberto",
+    "lastName": "Comelon",
+    "businessName": "Venta de Ropa XXXXXL",
+    "province": "Cartago",
+    "canton": "Central",
+    "district": "Oriental",
+    "address": "Desde cualquier lugar me veo, no se preocupe",
+    "phoneN": 2252521,
+    "birthDate": "1973-11-02T00:00:00",
+    "sinpeN": 82415214,
+    "comment": "",
+    "status": "PENDING",
+    "password": "pinfloi56"
+}
+
+{
+    "cedula":10,
+    "name":"Margarita",
+    "lastName": "Chismosa",
+    "businessName": "Emporio del Vidrio Quebrado",
+    "province": "Cartago",
+    "canton": "Central",
+    "district": "Oriental",
+    "address": "Asilo para Ancianos Cenizas y Calambres",
+    "phoneN": 2252521,
+    "birthDate": "500-02-21T00:00:00",
+    "sinpeN": 82415214,
+    "comment": "",
+    "status": "PENDING",
+    "password": "elVidrioesmipasion52"
+}
+
+
 
 ---> EJEMPLOS DE SOLICITUDES DE LOGIN
 
@@ -123,6 +175,34 @@ Stencils
     "deliveryPlaces": "",
     "calification": 5.0
 }
+
+        -->EJEMPLOS DE PRODUCTOS
+
+        {
+            "id":152141,
+            "name":"Vidrio roto",
+            "category":"placer",
+            "producer":10,
+            "image":"https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_4:3/k%2FPhoto%2FLifestyle%2F2020-04-4-Easy-Ways-to-Clean-Up-Broken-Glass%2F4-Easy-Ways-to-Clean-Up-Broken-Glass-Tips-from-the-Kitchn661",
+            "cost":500.0,
+            "saleMode":"Bolsa",
+            "inStock":5.3,
+            "profits":0
+        }
+        
+        {
+            "id":854854,
+            "name":"Vaso de Vidrio Quebrado",
+            "category":"sentables",
+            "producer":10,
+            "image":"https://guerracivileesp.files.wordpress.com/2010/08/z-c-013.jpg",
+            "cost":500.0,
+            "saleMode":"Unitario",
+            "inStock":12,
+            "profits":0
+        }
+
+
 
 ---> EJEMPLOS DE CLIENTES
 
