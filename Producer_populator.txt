@@ -1,0 +1,1871 @@
+public void producerPopulator()
+        {
+            ArrayList types = new ArrayList() { "Tramo", "Carniceria", "Abarrotes", "Floristeria", "Pescaderia", "Panaderia"};
+            ArrayList femenine = new ArrayList(){"Buena Providencia", "Casa de los Abuelos", "Manana", "Marina", "Evangelica", "Ponderosa", "Ardilla", "Milla Verde", "Gran Provincia", "Rana Coja", "Caja Magica", "Maravilla", "Burbuja", "Tartamuda", "Unica", "Chola",
+              "Remora", "Reciclada", "Remolacha", "Amada", "Morcilla", "Puerta Roja", "Moneda", "Galleta", "Morada", "Primavera Verde", "Pradera", "Fabrica", "Posada", "Alemana", "Costanera", "Cadena de Oro", "Tremebunda", "Tulevieja", "Talavera",
+              "Horchata", "Olla", "Vertiente", "Abeja", "Mantaraya", "Masa", "Morelia", "Mincha", "Tierra Blanca", "Tina de Marmol", "Arrecha", "Bruja Tuerta", "Gata del Techo", "Trituradora", "Trocha", "Troja", "Mula", "Malanga", "Marea", "Maraca","Cupula","Hormiga" };
+            ArrayList masculine = new ArrayList(){"Buen Pastor","Poderoso","Perro de Oro","Canino","Caliz de Oro","Cristo","Quinto Mandamiento","Ojo del Sol","Principio","Puerto","Perico Renco","Padre","Porton Azul","Puerto","Projimo","Licho","Canario","Caleidoscopio",
+                "Camanance","Canfin","Legado","Candado","Sol de Mayo","Caimito","Santo Milagro","Pais Maravilloso","Panal","Cacinas","Oasis","Ogro","Otomano","Hormiguero","Cojo","Jocote","Canicas","Castillo Azul","Carretillo","Kiosko","Malacrianza","Campamento","Camaleon","Limon","Comegen",
+                "Corcho","Cocodrilo","Cuchillo de Plata","Compadre","Conde","Olivo","Caramelo","Caiman","Casco de Oro","Cristo Redentor","Malinche","Matapalo","Mandril","Martillo","Mazo","Marsupial","Monedero Chino","Chino de Oro","Mantel de Seda","General","Coronel","Cristo Redentor","Meneito","Chiqui-Chiqui" };
+
+            ArrayList names = new ArrayList() {"Ana","Carlos","Josue","Jose","Gertrudis","Amelia","Joshua","Carolina","Herbert","Abigail","Luis","Jammal","Alberto","Esteban","Daniel","Sebastian","Manuel","David","Josefina","Marta","Ricardo","Kevin","Tomas","Amalia","Valeria","Melissa"};
+            ArrayList lastNames = new ArrayList() {"Gonzalez","Camacho","Mendez","Calderon","Arce","Carrillo","Milanes","Bermudez","Martinez","Morales","Ramirez","Rodriguez","Barquero","Lopez","Navarrete","Villalobos","Mora","Godinez","Garro","Ruiz","Miso","Alfaro","Zuniga","Venegas","Moreira"};
+
+            ArrayList provinces = new ArrayList() { "San José", "Alajuela", "Cartago", "Heredia", "Guanacaste", "Puntarenas", "Limon" };
+
+            ArrayList sanJose = new ArrayList() { "Central", "Escazú", "Desamparados", "Puriscal", "Tarrazú", "Aserrí", "Mora", "Goicoechea", "Santa Ana", "Alajuelita", "Vázquez de Coronado", "Acosta", "Tibás", "Moravia", "Montes De Oca", "Turrubares", "Dota", "Curridabat", "Pérez Zeledón", "León Cortés Castro" };
+            ArrayList alajuela = new ArrayList() { "Central", "San Ramón", "Grecia", "San Mateo", "Atenas", "Naranjo", "Palmares", "Poás", "Orotina", "San Carlos", "Zarcero", "Valverde Vega", "Upala", "Los Chiles", "Guatuso", "Río Cuarto" };
+            ArrayList cartago = new ArrayList() { "Central", "Paraíso", "La Unión", "Jiménez", "Turrialba", "Alvarado", "Oreamuno", "El Guarco" };
+            ArrayList heredia = new ArrayList() { "Central", "Barva", "Santo Domingo", "Santa Barbara", "San Rafael", "San Isidro", "Belén", "Flores", "San Pablo", "Sarapiquí" };
+            ArrayList guanacaste = new ArrayList() { "Liberia", "Nicoya", "Santa Cruz", "Bagaces", "Carrillo", "Cañas", "Abangares", "Tilarán", "Nandayure", "La Cruz", "Hojancha" };
+            ArrayList puntarenas = new ArrayList() { "Central", "Esparza", "Buenos Aires", "Montes De Oro", "Osa", "Quepos", "Golfito", "Coto Brus", "Parrita", "Corredores", "Garabito" };
+            ArrayList limon = new ArrayList() { "Central", "Pococí", "Siquirres", "Talamanca", "Matina", "Guácimo" };
+
+            ArrayList sanJose_dist = new ArrayList() { new ArrayList(){"Carmen","Merced","Hospital","Catedral","Zapote","San Francisco De Dos Ríos","Uruca","Mata Redonda","Pavas","Hatillo","San Sebastián"},
+                                                       new ArrayList(){"Escazú","San Antonio","San Rafael"},
+                                                       new ArrayList(){"Desamparados","San Miguel","San Juan De Dios","San Rafael Arriba","San Rafael Abajo","San Antonio","Frailes","Patarra","San Cristobal","Rosario","Damas","Gravilias","Los Guido"},
+                                                       new ArrayList(){"Santiago","Mercedes Sur","Barbacoas","Grifo Alto","San Rafael","Candelarita","Desamparaditos","San Antonio","Chires"},
+                                                       new ArrayList(){"San Marcos","San Lorenzo","San Carlos"},
+                                                       new ArrayList(){"Aserrí","Tarbaca","Vuelta De Jorco","San Gabriel","Legua","Monterrey","Salitrillos"},
+                                                       new ArrayList(){"Colón","Guayabo","Tabarcia","Piedras Negras","Picagres","Jaris"},
+                                                       new ArrayList(){"Guadalupe","San Francisco","Calle Blancos","Mata De Platano","Ipís","Rancho Redondo","Purral"},
+                                                       new ArrayList(){"Santa Ana","Salitral","Pozos","Uruca","Piedades","Brasil"},
+                                                       new ArrayList(){"Alajuelita","San Josecito","San Antonio","Concepción","San Felipe"},
+                                                       new ArrayList(){"San Isidro","San Rafael","Dulce Nombre De Jesús","Patalillo","Cascajal"},
+                                                       new ArrayList(){"San Ignacio","Guaitil","Palmichal","Cangrejal","Sabanillas"},
+                                                       new ArrayList(){"San Juan","Cinco Esquinas","Anselmo LLorente","Leon Xiii","Colima"},
+                                                       new ArrayList(){"San Vicente","San Jeronimo","La Trinidad"},
+                                                       new ArrayList(){"San Pedro","Sabanilla","Mercedes","San Rafael"},
+                                                       new ArrayList(){"San Pablo","San Pedro","San Juan De Mata","San Luis","Carara"},
+                                                       new ArrayList(){"Santa María","Jardin","Copey"},
+                                                       new ArrayList(){"Curridabat","Granadilla","Sanchez","Tirrases","San Isidro De El General","El General","Daniel Flores","Rivas","San Pedro","Platanares","Pejibaye","Cajon","Rio Nuevo","Páramo"},
+                                                       new ArrayList(){"San Isidro De El General","Daniel Flores","Rivas","San Pedro","Platanares","Pejibaye","Cajon","Baru","Rio Nuevo","Páramo"},
+                                                       new ArrayList(){"San Pablo","San Andres","Llano Bonito","San Isidro","Santa Cruz","San Antonio"}};
+
+            ArrayList alajuela_dist = new ArrayList() {new ArrayList(){"Alajuela", "San José", "Carrizal", "San Antonio", "Guácima", "San Isidro", "Sabanilla", "San Rafael", "Rio Segundo", "Desamparados","Turrucares","Tambor","Garita","Sarapiquí"},
+                                                       new ArrayList(){"San Ramón","Santiago","San Juan","Piedades Norte","Piedades Sur","San Rafael","San Isidro","Angeles","Alfaro","Volio","Concepción","Zapotal","Peñas Blancas"},
+                                                       new ArrayList(){"Grecia","San Isidro","San José","San Roque","Tacares","Rio Cuarto","Puente De Piedra","Bolivar"},
+                                                       new ArrayList(){"San Mateo","Desmonte","Jesús María","Labrador"},
+                                                       new ArrayList(){"Atenas","Jesús","Mercedes","San Isidro","Concepción","San José","Santa Eulalia","Escobal"},
+                                                       new ArrayList(){"Naranjo","San Miguel","San José","Cirri Sur","San Jerónimo","San Juan","El Rosario","Palmitos"},
+                                                       new ArrayList(){"Palmares","Zaragoza","Buenos Aires","Santiago","Candelaria","Esquipulas","la Granja"},
+                                                       new ArrayList(){"San Pedro","San Juan","San Rafael","Carrillos","Sabana Redonda"},
+                                                       new ArrayList(){"Orotina","El Mastate","Hacienda Vieja","Coyolar","La Ceiba"},
+                                                       new ArrayList(){"Quesada","Florencia","Buenavista","Aguas Zarcas","Venecia","Pital","La Fortuna","La Tigra","La Palmera","Venado","Cutris","Monterrey","Pocosol"},
+                                                       new ArrayList(){"Zarcero","Laguna","Tapesco","Guadalupe","Palmira","Zapote","Brisas"},
+                                                       new ArrayList(){"Sarchí Norte","Satchí Sur","Toro Amarillo","San Pedro","Rodriguez"},
+                                                       new ArrayList(){"Upala","Aguas Claras","San José o Pizote","Bijagua","Delicias","Dos Rios","Yolillal","Canalete"},
+                                                       new ArrayList(){"Los Chiles","Caño Negro","El Amparo","San Jorge"},
+                                                       new ArrayList(){"San Rafael","Buenavista","Cote","Katira"},
+                                                       new ArrayList(){"Río Cuarto"}};
+
+            ArrayList cartago_dist = new ArrayList() { new ArrayList(){"Oriental","Occidental","Carmen","San Nicolás","Aguacaliente o San Francisco","Guadalupe o Arenilla","Corralillo","Tierra Blanca","Dulce Nombre","Llano Grande","Quebradilla"},
+                                                       new ArrayList(){"Paraiso","Santiago","Orosi","Cachí","Llanos de Santa Lucía"},
+                                                       new ArrayList(){"Tres Rios","San Diego","San Juan","San Rafael","Concepción","Dulce Nombre","San Ramón","Rio Azul"},
+                                                       new ArrayList(){"Juan Viñas","Tucurrique","Pejibaye"},
+                                                       new ArrayList(){"Turrialba","La Suiza","Peralta","Santa Cruz","Santa Teresita","Pavones","Tuis","Tayutic","Santa Rosa","Tres Equis","La Isabel","Chirripó"},
+                                                       new ArrayList(){"Pacayas","Cervantes","Capellades"},
+                                                       new ArrayList(){"San Rafael","Cot","Potrero Cerrado","Cipreses","Santa Rosa"},
+                                                       new ArrayList(){"El Tejar","San Isidro","Tobosi","Patio De Agua"}};
+
+            ArrayList heredia_dist = new ArrayList() { new ArrayList(){"Heredia","Mercedes","San Francisco","Ulloa","Varablanca"},
+                                                       new ArrayList(){"Barva","San Pedro","San Pablo","San Roque","Santa Lucía","San José de la Montaña"},
+                                                       new ArrayList(){"Santo Domingo","San Vicente","San Miguel","Paracito","Santo Tomás","Santa Rosa","Tures","Para"},
+                                                       new ArrayList(){"Santa Bárbara","San Pedro","San Juan","Jesús","Santo Domingo","Puraba"},
+                                                       new ArrayList(){"San Rafael","San Josecito","Santiago","Los Ángeles","Concepción"},
+                                                       new ArrayList(){"San Isidro","San José","Concepción","San Francisco"},
+                                                       new ArrayList(){"San Antonio","La Ribera","La Asunción"},
+                                                       new ArrayList(){"San Joaquín","Barrantes","Llorente"},
+                                                       new ArrayList(){"San Pablo","Rincon De Sabanilla"},
+                                                       new ArrayList(){"Puerto Viejo","La Virgen","Las Horquetas","Llanuras Del Gaspar","Cureña"}};
+
+            ArrayList guanac_dist = new ArrayList() {   new ArrayList(){"Liberia","Cañas Dulces","Mayorga","Nacascolo","Curubande"},
+                                                       new ArrayList(){"Nicoya","Mansión","San Antonio","Quebrada Honda","Sámara","Nosara","Belén De Nosarita"},
+                                                       new ArrayList(){"Santa Cruz","Bolson","Veintisiete de Abril","Tempate","Cartagena","Cuajiniquil","Diria","Cabo Velas","Tamarindo"},
+                                                       new ArrayList(){"Bagaces","La Fortuna","Mogote","Rio Naranjo"},
+                                                       new ArrayList(){"Filadelfia","Palmira","Sardinal","Belen"},
+                                                       new ArrayList(){"Cañas","Palmira","San Miguel","Bebedero","Porozal"},
+                                                       new ArrayList(){"Las Juntas","Sierra","San Juan","Colorado"},
+                                                       new ArrayList(){"Tilarán","Quebrada Grande","Tronadora","Santa Rosa","Líbano","Tierras Morenas","Arenal"},
+                                                       new ArrayList(){"Carmona","Santa Rita","Zapotal","San Pablo","Porvenir","Bejuco"},
+                                                       new ArrayList(){"La Cruz","Santa Cecilia","La Garita","Santa Elena"},
+                                                       new ArrayList(){"Hojancha","Monte Romo","Puerto Carrillo","Huacas"}};
+
+            ArrayList punt_dist = new ArrayList() {    new ArrayList(){"Puntarenas","Putahaya","Chomes","Lepanto","Paquera","Manzanillo","Guacimal","Barranca","Monte Verde","Isla Del Coco","Cóbano","Chcarita","Chira","Acapulco","El Roble","Arancibia"},
+                                                       new ArrayList(){"Espíritu Santo","San Juan Grande","Macacona","San Rafael","San Jerónimo"},
+                                                       new ArrayList(){"Buenos Aires","Volcán","Potrero Grande","Boruca","Pilas","Colinas","Changuena","Biolley","Brunka"},
+                                                       new ArrayList(){"Miramar","La Unión","San Isidro"},
+                                                       new ArrayList(){"Puerto Cortés","Palmar","Sierpe","Bahía Ballena","Piedras Blancas","Bahía Drake"},
+                                                       new ArrayList(){"Quepos","Savegre","Naranjito"},
+                                                       new ArrayList(){"Golfito","Puerto Jiménez","Guayarca","Pavón"},
+                                                       new ArrayList(){"San Vito","Sabalito","Aguabuena","Limoncito","Pittier"},
+                                                       new ArrayList(){"Parrita"},
+                                                       new ArrayList(){"Corredor","La Cuesta","Canoas","Laurel"},
+                                                       new ArrayList(){"Jacó","Tárcoles"}};
+
+            ArrayList limon_dist = new ArrayList() {   new ArrayList(){"Limón","Velle La Estrella","Rio Blanco","Matama"},
+                                                       new ArrayList(){"Guapiles","Jiménez","Rita","Roxana","Cariari","Colorado","La Colonia"},
+                                                       new ArrayList(){"Siquirres","Pacuarito","Florida","Germania","El Cairo","Alegría"},
+                                                       new ArrayList(){"Bratsi","Sixaola","Cahuita","Telire"},
+                                                       new ArrayList(){"Matina","Batán","Carrandi"},
+                                                       new ArrayList(){"Guácimo","Mercedes","Pocora","Rio Jiménez","Duacari"}};
+
+
+            ArrayList producers = new ArrayList();
+
+            int counter = 1;
+            int ced = 100000000;
+            foreach (string province in provinces)
+            {
+                if(province.Equals("San José"))
+                {
+                    int dist = 0;
+                    foreach (string canton in sanJose)
+                    {
+                        ArrayList districts = (ArrayList)sanJose_dist[dist];
+                        foreach (string district in districts)
+                        {
+                            ArrayList taken = new ArrayList();
+                            for (int i = 0; i < 10; i++)
+                            {
+                                Random rd = new Random(counter);
+                                int num = rd.Next(0, 2);
+                                string name = names[rd.Next(0, names.Count)].ToString();
+                                string lastName = lastNames[rd.Next(0, lastNames.Count)].ToString();
+                                int cedula = ced;
+                                string address = province + "," + canton + "," + district;
+                                int phoneN = rd.Next(10000000, 99999999);
+                                string birthDate = rd.Next(1, 32).ToString() + "/" + rd.Next(1, 13).ToString() + "/" + rd.Next(1940, 2003).ToString();
+                                string passWord = "Standard";
+                                float calification = rd.Next(0, 6);
+                                ArrayList products = new ArrayList();
+                                string image = "";
+                                string type = types[rd.Next(0, types.Count)].ToString();
+                                string businessName = "";
+
+                                int ind = 0;
+                                if (num == 0)
+                                {
+                                    while (true)
+                                    {
+                                        bool breaker = true;
+                                        foreach (int element in taken)
+                                        {
+                                            if (element == ind)
+                                            {
+                                                breaker = false;
+                                                break;
+                                            }
+                                  
+                                        }
+                                        if (breaker)
+                                        {
+                                            break;
+                                        }
+                                        ind = rd.Next(0, masculine.Count);
+                                    }
+                                    businessName = type+" El " + masculine[ind];
+                                }
+                                else
+                                {
+                                    while (true)
+                                    {
+                                        bool breaker = true;
+                                        foreach (int element in taken)
+                                        {
+                                            if (element == ind)
+                                            {
+                                                breaker = false;
+                                                break;
+                                            }
+                                              
+                                        }
+                                        if (breaker)
+                                        {
+                                            break;
+                                        }
+                                        ind = rd.Next(0, femenine.Count);
+                                    }
+                                    businessName = type+" La " + femenine[ind];
+                                       
+                                }
+                                taken.Add(ind);
+                                rd = new Random(counter);
+                                if (type.Equals("Tramo"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://www.tec.ac.cr/sites/default/files/media/img/main/rsz_alimentos_0.jpg", "https://info7rm.blob.core.windows.net.optimalcdn.com/images/2016/11/09/455143_actividad_aconomica.jpg", "https://vistoenlaweb.files.wordpress.com/2012/05/frutas-y-vegetales-1.jpg", "https://cdn.forbes.com.mx/2018/10/alimentos.jpg1_-640x360.jpg", "https://www.3tres3.com/3tres3_common/art/3tres3/44697/home.jpg" };
+
+                                    Product lechuga = new Product(counter, "Lechuga", "Vegetales", cedula, "https://www.ecestaticos.com/image/clipping/f6b43dc70775ade11c69f67bd81ad637/opening.jpg", rd.Next(250, 401), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Tomates", "Vegetales", cedula, "https://www.lavanguardia.com/r/GODO/LV/p4/WebSite/2017/03/28/Recortada/img_ysaiz_20160908-162606_imagenes_lv_getty_istock_22114092_small-k6dG-U421271476554tOF-992x558@LaVanguardia-Web.jpg", rd.Next(500, 1201), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Manzanas", "Frutas", cedula, "https://mundoagropecuario.net/wp-content/uploads/2020/01/roja1-2048x1363-compressed.jpg", rd.Next(1000, 2001), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Berenjena", "Vegetales", cedula, "https://okdiario.com/img/recetas/2016/09/19/berenjenas.jpg", rd.Next(200, 701), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Papas", "Vegetales", cedula, "https://dietamediterranea.com/wp-content/uploads/2018/06/20180625-Papas-ali%C3%B1%C3%A1s-2000x1500.jpg", rd.Next(1000, 1501), "Kilogramo", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                else if (type.Equals("Carniceria"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://elmundo.cr/wp-content/uploads/2016/10/carniceria.jpg", "https://fusteburgas.com/img/contingut/_8.jpg", "https://pbs.twimg.com/media/CVNzk38WwAAGhGT.jpg", "https://blog.cofike.com/wp-content/uploads/2020/04/plan-de-negocio-carnicer%C3%ADa.jpg", "https://static.emisorasunidas.com/uploads/2019/07/WhatsApp-Image-2019-07-30-at-1.34.49-PM.jpeg" };
+
+                                    Product lechuga = new Product(counter, "Bistek", "Carnes", cedula, "https://img.freepik.com/foto-gratis/filete-ternera-crudo-hierbas-especias-carne-res-fresca-cortada-superficie-negra_73523-3013.jpg?size=626&ext=jpg", rd.Next(500, 1001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Chuleta", "Carnes", cedula, "https://okdiario.com/img/recetas/2017/07/25/chuletas-de-cerdo-4.jpg", rd.Next(1000, 1501), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Tortas de Carne", "Carnes", cedula, "https://chefmarketcr.com/image/cache/catalog/productos-chefmarket-ml/actualizacion-completa/carnes-rojas-y-blancas/torta-angus/TortasAnguz7oz-1-800x926.jpg", rd.Next(2000, 3001), "Caja", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Chicharrones", "Carnes", cedula, "https://recetasdepanama.com/wp-content/uploads/2019/03/CHICHARRON.jpg", rd.Next(5000, 9001), "Kilogramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Pollo Entero", "Carnes", cedula, "https://www.godfishsas.com/wp-content/uploads/2020/06/POLLO-EENTERO-24-AGOSTO.jpg", rd.Next(1700, 5001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                else if (type.Equals("Abarrotes"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://www.negociosgarantizados.com/wp-content/uploads/2020/07/music-2806852_960_720-680x380.jpg", "https://64.media.tumblr.com/2a663981JgwSgWMKcX3w6pS1gGzNg5nfcJAGc8/tumblr_nasbve22jr1r0dd5do1_1280.jpg", "https://1.bp.blogspot.com/-k7oREUAgxPo/U6h0xr1f1nI/AAAAAAAAAFA/fW5KqYyb6hE/s1600/abarrotes3.jpg", "https://i.pinimg.com/originals/61/bd/03/61bd03f7b5e6aefbff39afa43320f5cc.jpg", "https://votoenblanco.com.mx/wp-content/uploads/2019/08/Abarrotes2.jpg" };
+
+                                    Product lechuga = new Product(counter, "Sopa Instantanea", "Abarrotes", cedula, "https://www.nutricarrito.com/22412-large_default/sopa-instantanea-maruchan-sabor-pollo-64-g.jpg", rd.Next(150, 301), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Arroz", "Abarrotes", cedula, "https://cdn.shopify.com/s/files/1/1479/5948/products/automercado-granos-arroz8_grande.png?v=1473833184", rd.Next(2000, 4001), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Frijoles", "Abarrotes", cedula, "https://www.peridomicilio.com/images/watermarked/1/detailed/28/7441006005195.jpg", rd.Next(800, 1201), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Enlatados", "Abarrotes", cedula, "https://img.vixdata.io/pd/jpg-large/es/sites/default/files/imj/vivirsalud/5/5-alimentos-enlatados-que-debes-comer-1.jpg", rd.Next(1000, 2001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Conservas", "Abarrotes", cedula, "https://cuidateplus.marca.com/sites/default/files/images/conservasok.jpg", rd.Next(1000, 1501), "Frasco", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                else if (type.Equals("Floristeria"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://empresariados.com/wp-content/2017/04/floristeria-low-cost.jpeg", "https://estaticos.qdq.com/swdata/home_photos/141/141571953/a14c9479932b45da9e864c4fe1ac6014.jpg", "https://cronicaglobal.elespanol.com/uploads/s1/40/71/87/1/flores-y-plantas-colocados-en-maceteros-en-una-floristeria.jpeg", "https://blog.kolau.com/wp-content/uploads/2019/04/estrategias-para-vender-flores-destacada.jpg", "https://i.pinimg.com/originals/02/11/86/021186ae0dce953f2bef700317a56f18.jpg" };
+
+                                    Product lechuga = new Product(counter, "Arreglo Floral", "Varios", cedula, "https://www.azapflores.com/media/catalog/product/a/r/arreglos-florales-a-domicilio-florerias-guadalajara-florerias-en-zapopan-azapflores-dot-com.jpg", rd.Next(15000, 30001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Rosas", "Varios", cedula, "https://i.aquarelle.com/06/images/produits/ramo-rosas-rojas-envio-de-rosas-a-domicilio-550x550-33703.jpg", rd.Next(5000, 10001), "Ramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Girasoles", "Varios", cedula, "https://floresmenta.com/1847-large_default/ramo-de-girasoles.jpg", rd.Next(5000, 10001), "Ramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Tulipanes", "Varios", cedula, "https://ramosydecoraciondeeventos.com/wp-content/uploads/2019/01/arreglos-de-tulipanes-color-rojo-5.jpg", rd.Next(5000, 10001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Orquideas", "Varios", cedula, "https://orquideamania.com/wp-content/uploads/2018/12/orquideas-trepadoras-scaled.jpg", rd.Next(15000, 20001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                else if (type.Equals("Pescaderia"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://mercatperegarau.es/wp-content/uploads/2016/12/315_Francisco-Riera-Llorens-Maria-del-Carmen-del-%C3%81lamo-Acevedo-Peix-Peixateria-Vicenta-Pto-86-87-88_thumb.jpg", "https://mercatperegarau.es/wp-content/uploads/2016/12/360_Peix-Peixateria-Paula-Pto-96-97-98-99_072.jpg", "https://img.freepik.com/foto-gratis/cerca-mariscos-refrigerados-tienda-pescaderia_124271-67.jpg?size=626&ext=jpg", "https://mercatperegarau.es/wp-content/uploads/2016/12/315_Francisco-Riera-Llorens-Maria-del-Carmen-del-%C3%81lamo-Acevedo-Peix-Peixateria-Vicenta-Pto-86-87-88_thumb.jpg", "https://www.larepublica.net/storage/images/2016/03/09/201603091801271.pescaderia.jpg" };
+
+                                    Product lechuga = new Product(counter, "Pescado Entero", "Mariscos", cedula, "https://cdn2.salud180.com/sites/default/files/como-identificar-pescado-mal-estado.jpg", rd.Next(5000, 10001), "Kilogramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Pulpo", "Mariscos", cedula, "https://image.freepik.com/foto-gratis/pulpo-crudo-fresco-mariscos-organicos-vista-superior_89816-6790.jpg", rd.Next(5000, 10001), "Kilogramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Camarones", "Mariscos", cedula, "https://www.mqltv.com/wp-content/uploads/2017/03/ALERTA.jpg", rd.Next(5000, 70001), "Kilogramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Filet de Tilapia", "Mariscos", cedula, "https://www.congeladosartico.com.uy/product/image/large/til1002_1.jpg", rd.Next(1000, 5001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Cangrejo", "Mariscos", cedula, "https://odysseedubienetre.be/img/organic-products/320/can-pregnant-women-eat-crab.jpg", rd.Next(5000, 7001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                else if (type.Equals("Panaderia"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://como-funciona.com/wp-content/uploads/2019/08/c%C3%B3mo-funciona-una-panader%C3%ADa-800x400.jpg", "https://elempresario.mx/sites/default/files/imagecache/nota_completa/panaderias_mexico.jpg", "https://www.seidlaboratory.com.ec/wp-content/uploads/elementor/thumbs/productos-panaderia-1-o0j3tuuop0we13qcmwz2oj9bfnazcxxdq2z8m1w7de.jpg", "https://chilealimentos.com/wp-content/uploads/2018/03/panaderia-y-pasteleria-1.jpg", "https://c.wallhere.com/photos/05/2a/pies_breads_cakes_delicious_milk_baking-622893.jpg!d" };
+
+                                    Product lechuga = new Product(counter, "Baguette", "Panes", cedula, "https://i.ytimg.com/vi/s4CcSPbLto8/maxresdefault.jpg", rd.Next(300, 501), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Galletas", "Panes", cedula, "https://www.dulcesideas.net/images/galle1.jpg", rd.Next(700, 1001), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Gatos", "Panes", cedula, "https://tipscr.com/hogar/img/cms/gaticos.png", rd.Next(1000, 1501), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Bizcochos", "Panes", cedula, "https://bizcochosame.com/wp-content/uploads/2017/03/23082016-DSC_0234.jpg", rd.Next(500, 1201), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Pastel de Chocolate", "Panes", cedula, "https://media.cnnchile.com/2019/02/pasteldechocolateconcoca.jpg", rd.Next(700, 1501), "Porcion", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                Producer p = new Producer(cedula, name, lastName, province, canton, district, address, phoneN, birthDate, phoneN, calification, address, businessName, passWord, image);
+                                p.setProducts(products);
+                                producers.Add(p);
+                                ced++;
+                                Debug.WriteLine(counter);
+                            }
+                        }
+
+                        dist++;
+                    }
+                     
+                }
+                else if (province.Equals("Alajuela"))
+                {
+                    int dist = 0;
+                    foreach (string canton in alajuela)
+                    {
+                        ArrayList districts = (ArrayList)alajuela_dist[dist];
+                        foreach (string district in districts)
+                        {
+                            ArrayList taken = new ArrayList();
+                            for (int i = 0; i < 10; i++)
+                            {
+                                Random rd = new Random();
+                                int num = rd.Next(0, 2);
+                                string name = names[rd.Next(0, names.Count)].ToString();
+                                string lastName = lastNames[rd.Next(0, lastNames.Count)].ToString();
+                                int cedula = ced;
+                                string address = province + "," + canton + "," + district;
+                                int phoneN = rd.Next(10000000, 99999999);
+                                string birthDate = rd.Next(1, 32).ToString() + "/" + rd.Next(1, 13).ToString() + "/" + rd.Next(1940, 2003).ToString();
+                                string passWord = "Standard";
+                                float calification = rd.Next(0, 6);
+                                ArrayList products = new ArrayList();
+                                string image = "";
+                                string type = types[rd.Next(0, types.Count)].ToString();
+                                string businessName = "";
+
+                                int ind = 0;
+                                if (num == 0)
+                                {
+                                    while (true)
+                                    {
+                                        bool breaker = true;
+                                        foreach (int element in taken)
+                                        {
+                                            if (element == ind)
+                                            {
+                                                breaker = false;
+                                                break;
+                                            }
+                                             
+                                        }
+                                        if (breaker)
+                                        {
+                                            break;
+                                        }
+                                        ind = rd.Next(0, masculine.Count);
+                                    }
+                                    businessName = type+" El " + masculine[ind];
+                                }
+                                else
+                                {
+                                    while (true)
+                                    {
+                                        bool breaker = true;
+                                        foreach (int element in taken)
+                                        {
+                                            if (element == ind)
+                                            {
+                                                breaker = false;
+                                                break;
+                                            }
+                                               
+                                        }
+                                        if (breaker)
+                                        {
+                                            break;
+                                        }
+                                        ind = rd.Next(0, femenine.Count);
+                                    }
+                                    businessName = type+" La " + femenine[ind];
+                                }
+                                taken.Add(ind);
+                                rd = new Random(counter);
+                                if (type.Equals("Tramo"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://www.tec.ac.cr/sites/default/files/media/img/main/rsz_alimentos_0.jpg", "https://info7rm.blob.core.windows.net.optimalcdn.com/images/2016/11/09/455143_actividad_aconomica.jpg", "https://vistoenlaweb.files.wordpress.com/2012/05/frutas-y-vegetales-1.jpg", "https://cdn.forbes.com.mx/2018/10/alimentos.jpg1_-640x360.jpg", "https://www.3tres3.com/3tres3_common/art/3tres3/44697/home.jpg" };
+
+                                    Product lechuga = new Product(counter, "Lechuga", "Vegetales", cedula, "https://www.ecestaticos.com/image/clipping/f6b43dc70775ade11c69f67bd81ad637/opening.jpg", rd.Next(250, 401), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Tomates", "Vegetales", cedula, "https://www.lavanguardia.com/r/GODO/LV/p4/WebSite/2017/03/28/Recortada/img_ysaiz_20160908-162606_imagenes_lv_getty_istock_22114092_small-k6dG-U421271476554tOF-992x558@LaVanguardia-Web.jpg", rd.Next(500, 1201), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Manzanas", "Frutas", cedula, "https://mundoagropecuario.net/wp-content/uploads/2020/01/roja1-2048x1363-compressed.jpg", rd.Next(1000, 2001), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Berenjena", "Vegetales", cedula, "https://okdiario.com/img/recetas/2016/09/19/berenjenas.jpg", rd.Next(200, 701), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Papas", "Vegetales", cedula, "https://dietamediterranea.com/wp-content/uploads/2018/06/20180625-Papas-ali%C3%B1%C3%A1s-2000x1500.jpg", rd.Next(1000, 1501), "Kilogramo", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                else if (type.Equals("Carniceria"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://elmundo.cr/wp-content/uploads/2016/10/carniceria.jpg", "https://fusteburgas.com/img/contingut/_8.jpg", "https://pbs.twimg.com/media/CVNzk38WwAAGhGT.jpg", "https://blog.cofike.com/wp-content/uploads/2020/04/plan-de-negocio-carnicer%C3%ADa.jpg", "https://static.emisorasunidas.com/uploads/2019/07/WhatsApp-Image-2019-07-30-at-1.34.49-PM.jpeg" };
+
+                                    Product lechuga = new Product(counter, "Bistek", "Carnes", cedula, "https://img.freepik.com/foto-gratis/filete-ternera-crudo-hierbas-especias-carne-res-fresca-cortada-superficie-negra_73523-3013.jpg?size=626&ext=jpg", rd.Next(500, 1001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Chuleta", "Carnes", cedula, "https://okdiario.com/img/recetas/2017/07/25/chuletas-de-cerdo-4.jpg", rd.Next(1000, 1501), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Tortas de Carne", "Carnes", cedula, "https://chefmarketcr.com/image/cache/catalog/productos-chefmarket-ml/actualizacion-completa/carnes-rojas-y-blancas/torta-angus/TortasAnguz7oz-1-800x926.jpg", rd.Next(2000, 3001), "Caja", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Chicharrones", "Carnes", cedula, "https://recetasdepanama.com/wp-content/uploads/2019/03/CHICHARRON.jpg", rd.Next(5000, 9001), "Kilogramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Pollo Entero", "Carnes", cedula, "https://www.godfishsas.com/wp-content/uploads/2020/06/POLLO-EENTERO-24-AGOSTO.jpg", rd.Next(1700, 5001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                else if (type.Equals("Abarrotes"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://www.negociosgarantizados.com/wp-content/uploads/2020/07/music-2806852_960_720-680x380.jpg", "https://64.media.tumblr.com/2a663981JgwSgWMKcX3w6pS1gGzNg5nfcJAGc8/tumblr_nasbve22jr1r0dd5do1_1280.jpg", "https://1.bp.blogspot.com/-k7oREUAgxPo/U6h0xr1f1nI/AAAAAAAAAFA/fW5KqYyb6hE/s1600/abarrotes3.jpg", "https://i.pinimg.com/originals/61/bd/03/61bd03f7b5e6aefbff39afa43320f5cc.jpg", "https://votoenblanco.com.mx/wp-content/uploads/2019/08/Abarrotes2.jpg" };
+
+                                    Product lechuga = new Product(counter, "Sopa Instantanea", "Abarrotes", cedula, "https://www.nutricarrito.com/22412-large_default/sopa-instantanea-maruchan-sabor-pollo-64-g.jpg", rd.Next(150, 301), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Arroz", "Abarrotes", cedula, "https://cdn.shopify.com/s/files/1/1479/5948/products/automercado-granos-arroz8_grande.png?v=1473833184", rd.Next(2000, 4001), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Frijoles", "Abarrotes", cedula, "https://www.peridomicilio.com/images/watermarked/1/detailed/28/7441006005195.jpg", rd.Next(800, 1201), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Enlatados", "Abarrotes", cedula, "https://img.vixdata.io/pd/jpg-large/es/sites/default/files/imj/vivirsalud/5/5-alimentos-enlatados-que-debes-comer-1.jpg", rd.Next(1000, 2001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Conservas", "Abarrotes", cedula, "https://cuidateplus.marca.com/sites/default/files/images/conservasok.jpg", rd.Next(1000, 1501), "Frasco", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                else if (type.Equals("Floristeria"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://empresariados.com/wp-content/2017/04/floristeria-low-cost.jpeg", "https://estaticos.qdq.com/swdata/home_photos/141/141571953/a14c9479932b45da9e864c4fe1ac6014.jpg", "https://cronicaglobal.elespanol.com/uploads/s1/40/71/87/1/flores-y-plantas-colocados-en-maceteros-en-una-floristeria.jpeg", "https://blog.kolau.com/wp-content/uploads/2019/04/estrategias-para-vender-flores-destacada.jpg", "https://i.pinimg.com/originals/02/11/86/021186ae0dce953f2bef700317a56f18.jpg" };
+
+                                    Product lechuga = new Product(counter, "Arreglo Floral", "Varios", cedula, "https://www.azapflores.com/media/catalog/product/a/r/arreglos-florales-a-domicilio-florerias-guadalajara-florerias-en-zapopan-azapflores-dot-com.jpg", rd.Next(15000, 30001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Rosas", "Varios", cedula, "https://i.aquarelle.com/06/images/produits/ramo-rosas-rojas-envio-de-rosas-a-domicilio-550x550-33703.jpg", rd.Next(5000, 10001), "Ramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Girasoles", "Varios", cedula, "https://floresmenta.com/1847-large_default/ramo-de-girasoles.jpg", rd.Next(5000, 10001), "Ramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Tulipanes", "Varios", cedula, "https://ramosydecoraciondeeventos.com/wp-content/uploads/2019/01/arreglos-de-tulipanes-color-rojo-5.jpg", rd.Next(5000, 10001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Orquideas", "Varios", cedula, "https://orquideamania.com/wp-content/uploads/2018/12/orquideas-trepadoras-scaled.jpg", rd.Next(15000, 20001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                else if (type.Equals("Pescaderia"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://mercatperegarau.es/wp-content/uploads/2016/12/315_Francisco-Riera-Llorens-Maria-del-Carmen-del-%C3%81lamo-Acevedo-Peix-Peixateria-Vicenta-Pto-86-87-88_thumb.jpg", "https://mercatperegarau.es/wp-content/uploads/2016/12/360_Peix-Peixateria-Paula-Pto-96-97-98-99_072.jpg", "https://img.freepik.com/foto-gratis/cerca-mariscos-refrigerados-tienda-pescaderia_124271-67.jpg?size=626&ext=jpg", "https://mercatperegarau.es/wp-content/uploads/2016/12/315_Francisco-Riera-Llorens-Maria-del-Carmen-del-%C3%81lamo-Acevedo-Peix-Peixateria-Vicenta-Pto-86-87-88_thumb.jpg", "https://www.larepublica.net/storage/images/2016/03/09/201603091801271.pescaderia.jpg" };
+
+                                    Product lechuga = new Product(counter, "Pescado Entero", "Mariscos", cedula, "https://cdn2.salud180.com/sites/default/files/como-identificar-pescado-mal-estado.jpg", rd.Next(5000, 10001), "Kilogramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Pulpo", "Mariscos", cedula, "https://image.freepik.com/foto-gratis/pulpo-crudo-fresco-mariscos-organicos-vista-superior_89816-6790.jpg", rd.Next(5000, 10001), "Kilogramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Camarones", "Mariscos", cedula, "https://www.mqltv.com/wp-content/uploads/2017/03/ALERTA.jpg", rd.Next(5000, 70001), "Kilogramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Filet de Tilapia", "Mariscos", cedula, "https://www.congeladosartico.com.uy/product/image/large/til1002_1.jpg", rd.Next(1000, 5001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Cangrejo", "Mariscos", cedula, "https://odysseedubienetre.be/img/organic-products/320/can-pregnant-women-eat-crab.jpg", rd.Next(5000, 7001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                else if (type.Equals("Panaderia"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://como-funciona.com/wp-content/uploads/2019/08/c%C3%B3mo-funciona-una-panader%C3%ADa-800x400.jpg", "https://elempresario.mx/sites/default/files/imagecache/nota_completa/panaderias_mexico.jpg", "https://www.seidlaboratory.com.ec/wp-content/uploads/elementor/thumbs/productos-panaderia-1-o0j3tuuop0we13qcmwz2oj9bfnazcxxdq2z8m1w7de.jpg", "https://chilealimentos.com/wp-content/uploads/2018/03/panaderia-y-pasteleria-1.jpg", "https://c.wallhere.com/photos/05/2a/pies_breads_cakes_delicious_milk_baking-622893.jpg!d" };
+
+                                    Product lechuga = new Product(counter, "Baguette", "Panes", cedula, "https://i.ytimg.com/vi/s4CcSPbLto8/maxresdefault.jpg", rd.Next(300, 501), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Galletas", "Panes", cedula, "https://www.dulcesideas.net/images/galle1.jpg", rd.Next(700, 1001), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Gatos", "Panes", cedula, "https://tipscr.com/hogar/img/cms/gaticos.png", rd.Next(1000, 1501), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Bizcochos", "Panes", cedula, "https://bizcochosame.com/wp-content/uploads/2017/03/23082016-DSC_0234.jpg", rd.Next(500, 1201), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Pastel de Chocolate", "Panes", cedula, "https://media.cnnchile.com/2019/02/pasteldechocolateconcoca.jpg", rd.Next(700, 1501), "Porcion", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                Producer p = new Producer(cedula, name, lastName, province, canton, district, address, phoneN, birthDate, phoneN, calification, address, businessName, passWord, image);
+                                p.setProducts(products);
+                                producers.Add(p);
+                                ced++;
+                                Debug.WriteLine(counter);
+                            }
+                        }
+                        dist++;
+                    }
+                }
+                else if (province.Equals("Cartago"))
+                {
+                    int dist = 0;
+                    foreach (string canton in cartago)
+                    {
+                        ArrayList districts = (ArrayList)cartago_dist[dist];
+                        foreach (string district in districts)
+                        {
+                            ArrayList taken = new ArrayList();
+                            for (int i = 0; i < 10; i++)
+                            {
+                                Random rd = new Random();
+                                int num = rd.Next(0, 2);
+                                string name = names[rd.Next(0, names.Count)].ToString();
+                                string lastName = lastNames[rd.Next(0, lastNames.Count)].ToString();
+                                int cedula = ced;
+                                string address = province + "," + canton + "," + district;
+                                int phoneN = rd.Next(10000000, 99999999);
+                                string birthDate = rd.Next(1, 32).ToString() + "/" + rd.Next(1, 13).ToString() + "/" + rd.Next(1940, 2003).ToString();
+                                string passWord = "Standard";
+                                float calification = rd.Next(0, 6);
+                                ArrayList products = new ArrayList();
+                                string image = "";
+                                string type = types[rd.Next(0, types.Count)].ToString();
+                                string businessName = "";
+
+                                int ind = 0;
+                                if (num == 0)
+                                {
+                                    while (true)
+                                    {
+                                        bool breaker = true;
+                                        foreach (int element in taken)
+                                        {
+                                            if (element == ind)
+                                            {
+                                                breaker = false;
+                                                break;
+                                            }
+                                               
+                                        }
+                                        if (breaker)
+                                        {
+                                            break;
+                                        }
+                                        ind = rd.Next(0, masculine.Count);
+                                    }
+                                    businessName = type+" El " + masculine[ind];
+                                }
+                                else
+                                {
+                                    while (true)
+                                    {
+                                        bool breaker = true;
+                                        foreach (int element in taken)
+                                        {
+                                            if (element == ind)
+                                            {
+                                                breaker = false;
+                                                break;
+                                            }
+                                                
+                                        }
+                                        if (breaker)
+                                        {
+                                            break;
+                                        }
+                                        ind = rd.Next(0, femenine.Count);
+                                    }
+                                    businessName = type+" La " + femenine[ind];
+                                }
+                                taken.Add(ind);
+                                rd = new Random(counter);
+                                if (type.Equals("Tramo"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://www.tec.ac.cr/sites/default/files/media/img/main/rsz_alimentos_0.jpg", "https://info7rm.blob.core.windows.net.optimalcdn.com/images/2016/11/09/455143_actividad_aconomica.jpg", "https://vistoenlaweb.files.wordpress.com/2012/05/frutas-y-vegetales-1.jpg", "https://cdn.forbes.com.mx/2018/10/alimentos.jpg1_-640x360.jpg", "https://www.3tres3.com/3tres3_common/art/3tres3/44697/home.jpg" };
+
+                                    Product lechuga = new Product(counter, "Lechuga", "Vegetales", cedula, "https://www.ecestaticos.com/image/clipping/f6b43dc70775ade11c69f67bd81ad637/opening.jpg", rd.Next(250, 401), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Tomates", "Vegetales", cedula, "https://www.lavanguardia.com/r/GODO/LV/p4/WebSite/2017/03/28/Recortada/img_ysaiz_20160908-162606_imagenes_lv_getty_istock_22114092_small-k6dG-U421271476554tOF-992x558@LaVanguardia-Web.jpg", rd.Next(500, 1201), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Manzanas", "Frutas", cedula, "https://mundoagropecuario.net/wp-content/uploads/2020/01/roja1-2048x1363-compressed.jpg", rd.Next(1000, 2001), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Berenjena", "Vegetales", cedula, "https://okdiario.com/img/recetas/2016/09/19/berenjenas.jpg", rd.Next(200, 701), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Papas", "Vegetales", cedula, "https://dietamediterranea.com/wp-content/uploads/2018/06/20180625-Papas-ali%C3%B1%C3%A1s-2000x1500.jpg", rd.Next(1000, 1501), "Kilogramo", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                else if (type.Equals("Carniceria"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://elmundo.cr/wp-content/uploads/2016/10/carniceria.jpg", "https://fusteburgas.com/img/contingut/_8.jpg", "https://pbs.twimg.com/media/CVNzk38WwAAGhGT.jpg", "https://blog.cofike.com/wp-content/uploads/2020/04/plan-de-negocio-carnicer%C3%ADa.jpg", "https://static.emisorasunidas.com/uploads/2019/07/WhatsApp-Image-2019-07-30-at-1.34.49-PM.jpeg" };
+
+                                    Product lechuga = new Product(counter, "Bistek", "Carnes", cedula, "https://img.freepik.com/foto-gratis/filete-ternera-crudo-hierbas-especias-carne-res-fresca-cortada-superficie-negra_73523-3013.jpg?size=626&ext=jpg", rd.Next(500, 1001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Chuleta", "Carnes", cedula, "https://okdiario.com/img/recetas/2017/07/25/chuletas-de-cerdo-4.jpg", rd.Next(1000, 1501), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Tortas de Carne", "Carnes", cedula, "https://chefmarketcr.com/image/cache/catalog/productos-chefmarket-ml/actualizacion-completa/carnes-rojas-y-blancas/torta-angus/TortasAnguz7oz-1-800x926.jpg", rd.Next(2000, 3001), "Caja", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Chicharrones", "Carnes", cedula, "https://recetasdepanama.com/wp-content/uploads/2019/03/CHICHARRON.jpg", rd.Next(5000, 9001), "Kilogramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Pollo Entero", "Carnes", cedula, "https://www.godfishsas.com/wp-content/uploads/2020/06/POLLO-EENTERO-24-AGOSTO.jpg", rd.Next(1700, 5001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                else if (type.Equals("Abarrotes"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://www.negociosgarantizados.com/wp-content/uploads/2020/07/music-2806852_960_720-680x380.jpg", "https://64.media.tumblr.com/2a663981JgwSgWMKcX3w6pS1gGzNg5nfcJAGc8/tumblr_nasbve22jr1r0dd5do1_1280.jpg", "https://1.bp.blogspot.com/-k7oREUAgxPo/U6h0xr1f1nI/AAAAAAAAAFA/fW5KqYyb6hE/s1600/abarrotes3.jpg", "https://i.pinimg.com/originals/61/bd/03/61bd03f7b5e6aefbff39afa43320f5cc.jpg", "https://votoenblanco.com.mx/wp-content/uploads/2019/08/Abarrotes2.jpg" };
+
+                                    Product lechuga = new Product(counter, "Sopa Instantanea", "Abarrotes", cedula, "https://www.nutricarrito.com/22412-large_default/sopa-instantanea-maruchan-sabor-pollo-64-g.jpg", rd.Next(150, 301), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Arroz", "Abarrotes", cedula, "https://cdn.shopify.com/s/files/1/1479/5948/products/automercado-granos-arroz8_grande.png?v=1473833184", rd.Next(2000, 4001), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Frijoles", "Abarrotes", cedula, "https://www.peridomicilio.com/images/watermarked/1/detailed/28/7441006005195.jpg", rd.Next(800, 1201), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Enlatados", "Abarrotes", cedula, "https://img.vixdata.io/pd/jpg-large/es/sites/default/files/imj/vivirsalud/5/5-alimentos-enlatados-que-debes-comer-1.jpg", rd.Next(1000, 2001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Conservas", "Abarrotes", cedula, "https://cuidateplus.marca.com/sites/default/files/images/conservasok.jpg", rd.Next(1000, 1501), "Frasco", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                else if (type.Equals("Floristeria"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://empresariados.com/wp-content/2017/04/floristeria-low-cost.jpeg", "https://estaticos.qdq.com/swdata/home_photos/141/141571953/a14c9479932b45da9e864c4fe1ac6014.jpg", "https://cronicaglobal.elespanol.com/uploads/s1/40/71/87/1/flores-y-plantas-colocados-en-maceteros-en-una-floristeria.jpeg", "https://blog.kolau.com/wp-content/uploads/2019/04/estrategias-para-vender-flores-destacada.jpg", "https://i.pinimg.com/originals/02/11/86/021186ae0dce953f2bef700317a56f18.jpg" };
+
+                                    Product lechuga = new Product(counter, "Arreglo Floral", "Varios", cedula, "https://www.azapflores.com/media/catalog/product/a/r/arreglos-florales-a-domicilio-florerias-guadalajara-florerias-en-zapopan-azapflores-dot-com.jpg", rd.Next(15000, 30001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Rosas", "Varios", cedula, "https://i.aquarelle.com/06/images/produits/ramo-rosas-rojas-envio-de-rosas-a-domicilio-550x550-33703.jpg", rd.Next(5000, 10001), "Ramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Girasoles", "Varios", cedula, "https://floresmenta.com/1847-large_default/ramo-de-girasoles.jpg", rd.Next(5000, 10001), "Ramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Tulipanes", "Varios", cedula, "https://ramosydecoraciondeeventos.com/wp-content/uploads/2019/01/arreglos-de-tulipanes-color-rojo-5.jpg", rd.Next(5000, 10001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Orquideas", "Varios", cedula, "https://orquideamania.com/wp-content/uploads/2018/12/orquideas-trepadoras-scaled.jpg", rd.Next(15000, 20001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                else if (type.Equals("Pescaderia"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://mercatperegarau.es/wp-content/uploads/2016/12/315_Francisco-Riera-Llorens-Maria-del-Carmen-del-%C3%81lamo-Acevedo-Peix-Peixateria-Vicenta-Pto-86-87-88_thumb.jpg", "https://mercatperegarau.es/wp-content/uploads/2016/12/360_Peix-Peixateria-Paula-Pto-96-97-98-99_072.jpg", "https://img.freepik.com/foto-gratis/cerca-mariscos-refrigerados-tienda-pescaderia_124271-67.jpg?size=626&ext=jpg", "https://mercatperegarau.es/wp-content/uploads/2016/12/315_Francisco-Riera-Llorens-Maria-del-Carmen-del-%C3%81lamo-Acevedo-Peix-Peixateria-Vicenta-Pto-86-87-88_thumb.jpg", "https://www.larepublica.net/storage/images/2016/03/09/201603091801271.pescaderia.jpg" };
+
+                                    Product lechuga = new Product(counter, "Pescado Entero", "Mariscos", cedula, "https://cdn2.salud180.com/sites/default/files/como-identificar-pescado-mal-estado.jpg", rd.Next(5000, 10001), "Kilogramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Pulpo", "Mariscos", cedula, "https://image.freepik.com/foto-gratis/pulpo-crudo-fresco-mariscos-organicos-vista-superior_89816-6790.jpg", rd.Next(5000, 10001), "Kilogramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Camarones", "Mariscos", cedula, "https://www.mqltv.com/wp-content/uploads/2017/03/ALERTA.jpg", rd.Next(5000, 70001), "Kilogramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Filet de Tilapia", "Mariscos", cedula, "https://www.congeladosartico.com.uy/product/image/large/til1002_1.jpg", rd.Next(1000, 5001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Cangrejo", "Mariscos", cedula, "https://odysseedubienetre.be/img/organic-products/320/can-pregnant-women-eat-crab.jpg", rd.Next(5000, 7001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                else if (type.Equals("Panaderia"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://como-funciona.com/wp-content/uploads/2019/08/c%C3%B3mo-funciona-una-panader%C3%ADa-800x400.jpg", "https://elempresario.mx/sites/default/files/imagecache/nota_completa/panaderias_mexico.jpg", "https://www.seidlaboratory.com.ec/wp-content/uploads/elementor/thumbs/productos-panaderia-1-o0j3tuuop0we13qcmwz2oj9bfnazcxxdq2z8m1w7de.jpg", "https://chilealimentos.com/wp-content/uploads/2018/03/panaderia-y-pasteleria-1.jpg", "https://c.wallhere.com/photos/05/2a/pies_breads_cakes_delicious_milk_baking-622893.jpg!d" };
+
+                                    Product lechuga = new Product(counter, "Baguette", "Panes", cedula, "https://i.ytimg.com/vi/s4CcSPbLto8/maxresdefault.jpg", rd.Next(300, 501), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Galletas", "Panes", cedula, "https://www.dulcesideas.net/images/galle1.jpg", rd.Next(700, 1001), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Gatos", "Panes", cedula, "https://tipscr.com/hogar/img/cms/gaticos.png", rd.Next(1000, 1501), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Bizcochos", "Panes", cedula, "https://bizcochosame.com/wp-content/uploads/2017/03/23082016-DSC_0234.jpg", rd.Next(500, 1201), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Pastel de Chocolate", "Panes", cedula, "https://media.cnnchile.com/2019/02/pasteldechocolateconcoca.jpg", rd.Next(700, 1501), "Porcion", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                Producer p = new Producer(cedula, name, lastName, province, canton, district, address, phoneN, birthDate, phoneN, calification, address, businessName, passWord, image);
+                                p.setProducts(products);
+                                producers.Add(p);
+                                ced++;
+                                Debug.WriteLine(counter);
+                            }
+                        }
+
+                        dist++;
+                    }
+                }
+                else if (province.Equals("Heredia"))
+                {
+                    int dist = 0;
+                    foreach (string canton in heredia)
+                    {
+                        ArrayList districts = (ArrayList)heredia_dist[dist];
+                        foreach (string district in districts)
+                        {
+                            ArrayList taken = new ArrayList();
+                            for (int i = 0; i < 10; i++)
+                            {
+                                Random rd = new Random();
+                                int num = rd.Next(0, 2);
+                                string name = names[rd.Next(0, names.Count)].ToString();
+                                string lastName = lastNames[rd.Next(0, lastNames.Count)].ToString();
+                                int cedula = ced;
+                                string address = province + "," + canton + "," + district;
+                                int phoneN = rd.Next(10000000, 99999999);
+                                string birthDate = rd.Next(1, 32).ToString() + "/" + rd.Next(1, 13).ToString() + "/" + rd.Next(1940, 2003).ToString();
+                                string passWord = "Standard";
+                                float calification = rd.Next(0, 6);
+                                ArrayList products = new ArrayList();
+                                string image = "";
+                                string type = types[rd.Next(0, types.Count)].ToString();
+                                string businessName = "";
+
+                                int ind = 0;
+                                if (num == 0)
+                                {
+                                    while (true)
+                                    {
+                                        bool breaker = true;
+                                        foreach (int element in taken)
+                                        {
+                                            if (element == ind)
+                                            {
+                                                breaker = false;
+                                                break;
+                                            }
+                                                
+                                        }
+                                        if (breaker)
+                                        {
+                                            break;
+                                        }
+                                        ind = rd.Next(0, masculine.Count);
+                                    }
+                                    businessName = type+" El " + masculine[ind];
+                                }
+                                else
+                                {
+                                    while (true)
+                                    {
+                                        bool breaker = true;
+                                        foreach (int element in taken)
+                                        {
+                                            if (element == ind)
+                                            {
+                                                breaker = false;
+                                                break;
+                                            }
+                                                
+                                        }
+                                        if (breaker)
+                                        {
+                                            break;
+                                        }
+                                        ind = rd.Next(0, femenine.Count);
+                                    }
+                                    businessName = type+" La " + femenine[ind];
+                                }
+                                taken.Add(ind);
+                                rd = new Random(counter);
+                                if (type.Equals("Tramo"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://www.tec.ac.cr/sites/default/files/media/img/main/rsz_alimentos_0.jpg", "https://info7rm.blob.core.windows.net.optimalcdn.com/images/2016/11/09/455143_actividad_aconomica.jpg", "https://vistoenlaweb.files.wordpress.com/2012/05/frutas-y-vegetales-1.jpg", "https://cdn.forbes.com.mx/2018/10/alimentos.jpg1_-640x360.jpg", "https://www.3tres3.com/3tres3_common/art/3tres3/44697/home.jpg" };
+
+                                    Product lechuga = new Product(counter, "Lechuga", "Vegetales", cedula, "https://www.ecestaticos.com/image/clipping/f6b43dc70775ade11c69f67bd81ad637/opening.jpg", rd.Next(250, 401), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Tomates", "Vegetales", cedula, "https://www.lavanguardia.com/r/GODO/LV/p4/WebSite/2017/03/28/Recortada/img_ysaiz_20160908-162606_imagenes_lv_getty_istock_22114092_small-k6dG-U421271476554tOF-992x558@LaVanguardia-Web.jpg", rd.Next(500, 1201), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Manzanas", "Frutas", cedula, "https://mundoagropecuario.net/wp-content/uploads/2020/01/roja1-2048x1363-compressed.jpg", rd.Next(1000, 2001), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Berenjena", "Vegetales", cedula, "https://okdiario.com/img/recetas/2016/09/19/berenjenas.jpg", rd.Next(200, 701), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Papas", "Vegetales", cedula, "https://dietamediterranea.com/wp-content/uploads/2018/06/20180625-Papas-ali%C3%B1%C3%A1s-2000x1500.jpg", rd.Next(1000, 1501), "Kilogramo", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                else if (type.Equals("Carniceria"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://elmundo.cr/wp-content/uploads/2016/10/carniceria.jpg", "https://fusteburgas.com/img/contingut/_8.jpg", "https://pbs.twimg.com/media/CVNzk38WwAAGhGT.jpg", "https://blog.cofike.com/wp-content/uploads/2020/04/plan-de-negocio-carnicer%C3%ADa.jpg", "https://static.emisorasunidas.com/uploads/2019/07/WhatsApp-Image-2019-07-30-at-1.34.49-PM.jpeg" };
+
+                                    Product lechuga = new Product(counter, "Bistek", "Carnes", cedula, "https://img.freepik.com/foto-gratis/filete-ternera-crudo-hierbas-especias-carne-res-fresca-cortada-superficie-negra_73523-3013.jpg?size=626&ext=jpg", rd.Next(500, 1001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Chuleta", "Carnes", cedula, "https://okdiario.com/img/recetas/2017/07/25/chuletas-de-cerdo-4.jpg", rd.Next(1000, 1501), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Tortas de Carne", "Carnes", cedula, "https://chefmarketcr.com/image/cache/catalog/productos-chefmarket-ml/actualizacion-completa/carnes-rojas-y-blancas/torta-angus/TortasAnguz7oz-1-800x926.jpg", rd.Next(2000, 3001), "Caja", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Chicharrones", "Carnes", cedula, "https://recetasdepanama.com/wp-content/uploads/2019/03/CHICHARRON.jpg", rd.Next(5000, 9001), "Kilogramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Pollo Entero", "Carnes", cedula, "https://www.godfishsas.com/wp-content/uploads/2020/06/POLLO-EENTERO-24-AGOSTO.jpg", rd.Next(1700, 5001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                else if (type.Equals("Abarrotes"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://www.negociosgarantizados.com/wp-content/uploads/2020/07/music-2806852_960_720-680x380.jpg", "https://64.media.tumblr.com/2a663981JgwSgWMKcX3w6pS1gGzNg5nfcJAGc8/tumblr_nasbve22jr1r0dd5do1_1280.jpg", "https://1.bp.blogspot.com/-k7oREUAgxPo/U6h0xr1f1nI/AAAAAAAAAFA/fW5KqYyb6hE/s1600/abarrotes3.jpg", "https://i.pinimg.com/originals/61/bd/03/61bd03f7b5e6aefbff39afa43320f5cc.jpg", "https://votoenblanco.com.mx/wp-content/uploads/2019/08/Abarrotes2.jpg" };
+
+                                    Product lechuga = new Product(counter, "Sopa Instantanea", "Abarrotes", cedula, "https://www.nutricarrito.com/22412-large_default/sopa-instantanea-maruchan-sabor-pollo-64-g.jpg", rd.Next(150, 301), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Arroz", "Abarrotes", cedula, "https://cdn.shopify.com/s/files/1/1479/5948/products/automercado-granos-arroz8_grande.png?v=1473833184", rd.Next(2000, 4001), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Frijoles", "Abarrotes", cedula, "https://www.peridomicilio.com/images/watermarked/1/detailed/28/7441006005195.jpg", rd.Next(800, 1201), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Enlatados", "Abarrotes", cedula, "https://img.vixdata.io/pd/jpg-large/es/sites/default/files/imj/vivirsalud/5/5-alimentos-enlatados-que-debes-comer-1.jpg", rd.Next(1000, 2001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Conservas", "Abarrotes", cedula, "https://cuidateplus.marca.com/sites/default/files/images/conservasok.jpg", rd.Next(1000, 1501), "Frasco", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                else if (type.Equals("Floristeria"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://empresariados.com/wp-content/2017/04/floristeria-low-cost.jpeg", "https://estaticos.qdq.com/swdata/home_photos/141/141571953/a14c9479932b45da9e864c4fe1ac6014.jpg", "https://cronicaglobal.elespanol.com/uploads/s1/40/71/87/1/flores-y-plantas-colocados-en-maceteros-en-una-floristeria.jpeg", "https://blog.kolau.com/wp-content/uploads/2019/04/estrategias-para-vender-flores-destacada.jpg", "https://i.pinimg.com/originals/02/11/86/021186ae0dce953f2bef700317a56f18.jpg" };
+
+                                    Product lechuga = new Product(counter, "Arreglo Floral", "Varios", cedula, "https://www.azapflores.com/media/catalog/product/a/r/arreglos-florales-a-domicilio-florerias-guadalajara-florerias-en-zapopan-azapflores-dot-com.jpg", rd.Next(15000, 30001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Rosas", "Varios", cedula, "https://i.aquarelle.com/06/images/produits/ramo-rosas-rojas-envio-de-rosas-a-domicilio-550x550-33703.jpg", rd.Next(5000, 10001), "Ramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Girasoles", "Varios", cedula, "https://floresmenta.com/1847-large_default/ramo-de-girasoles.jpg", rd.Next(5000, 10001), "Ramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Tulipanes", "Varios", cedula, "https://ramosydecoraciondeeventos.com/wp-content/uploads/2019/01/arreglos-de-tulipanes-color-rojo-5.jpg", rd.Next(5000, 10001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Orquideas", "Varios", cedula, "https://orquideamania.com/wp-content/uploads/2018/12/orquideas-trepadoras-scaled.jpg", rd.Next(15000, 20001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                else if (type.Equals("Pescaderia"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://mercatperegarau.es/wp-content/uploads/2016/12/315_Francisco-Riera-Llorens-Maria-del-Carmen-del-%C3%81lamo-Acevedo-Peix-Peixateria-Vicenta-Pto-86-87-88_thumb.jpg", "https://mercatperegarau.es/wp-content/uploads/2016/12/360_Peix-Peixateria-Paula-Pto-96-97-98-99_072.jpg", "https://img.freepik.com/foto-gratis/cerca-mariscos-refrigerados-tienda-pescaderia_124271-67.jpg?size=626&ext=jpg", "https://mercatperegarau.es/wp-content/uploads/2016/12/315_Francisco-Riera-Llorens-Maria-del-Carmen-del-%C3%81lamo-Acevedo-Peix-Peixateria-Vicenta-Pto-86-87-88_thumb.jpg", "https://www.larepublica.net/storage/images/2016/03/09/201603091801271.pescaderia.jpg" };
+
+                                    Product lechuga = new Product(counter, "Pescado Entero", "Mariscos", cedula, "https://cdn2.salud180.com/sites/default/files/como-identificar-pescado-mal-estado.jpg", rd.Next(5000, 10001), "Kilogramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Pulpo", "Mariscos", cedula, "https://image.freepik.com/foto-gratis/pulpo-crudo-fresco-mariscos-organicos-vista-superior_89816-6790.jpg", rd.Next(5000, 10001), "Kilogramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Camarones", "Mariscos", cedula, "https://www.mqltv.com/wp-content/uploads/2017/03/ALERTA.jpg", rd.Next(5000, 70001), "Kilogramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Filet de Tilapia", "Mariscos", cedula, "https://www.congeladosartico.com.uy/product/image/large/til1002_1.jpg", rd.Next(1000, 5001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Cangrejo", "Mariscos", cedula, "https://odysseedubienetre.be/img/organic-products/320/can-pregnant-women-eat-crab.jpg", rd.Next(5000, 7001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                else if (type.Equals("Panaderia"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://como-funciona.com/wp-content/uploads/2019/08/c%C3%B3mo-funciona-una-panader%C3%ADa-800x400.jpg", "https://elempresario.mx/sites/default/files/imagecache/nota_completa/panaderias_mexico.jpg", "https://www.seidlaboratory.com.ec/wp-content/uploads/elementor/thumbs/productos-panaderia-1-o0j3tuuop0we13qcmwz2oj9bfnazcxxdq2z8m1w7de.jpg", "https://chilealimentos.com/wp-content/uploads/2018/03/panaderia-y-pasteleria-1.jpg", "https://c.wallhere.com/photos/05/2a/pies_breads_cakes_delicious_milk_baking-622893.jpg!d" };
+
+                                    Product lechuga = new Product(counter, "Baguette", "Panes", cedula, "https://i.ytimg.com/vi/s4CcSPbLto8/maxresdefault.jpg", rd.Next(300, 501), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Galletas", "Panes", cedula, "https://www.dulcesideas.net/images/galle1.jpg", rd.Next(700, 1001), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Gatos", "Panes", cedula, "https://tipscr.com/hogar/img/cms/gaticos.png", rd.Next(1000, 1501), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Bizcochos", "Panes", cedula, "https://bizcochosame.com/wp-content/uploads/2017/03/23082016-DSC_0234.jpg", rd.Next(500, 1201), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Pastel de Chocolate", "Panes", cedula, "https://media.cnnchile.com/2019/02/pasteldechocolateconcoca.jpg", rd.Next(700, 1501), "Porcion", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                Producer p = new Producer(cedula, name, lastName, province, canton, district, address, phoneN, birthDate, phoneN, calification, address, businessName, passWord, image);
+                                p.setProducts(products);
+                                producers.Add(p);
+                                ced++;
+                                Debug.WriteLine(counter);
+                            }
+                        }
+                        dist++;
+                    }
+                }
+                else if (province.Equals("Guanacaste"))
+                {
+                    int dist = 0;
+                    foreach (string canton in guanacaste)
+                    {
+                        ArrayList districts = (ArrayList)guanac_dist[dist];
+                        foreach (string district in districts)
+                        {
+                            ArrayList taken = new ArrayList();
+                            for (int i = 0; i < 10; i++)
+                            {
+                                Random rd = new Random();
+                                int num = rd.Next(0, 2);
+                                string name = names[rd.Next(0, names.Count)].ToString();
+                                string lastName = lastNames[rd.Next(0, lastNames.Count)].ToString();
+                                int cedula = ced;
+                                string address = province + "," + canton + "," + district;
+                                int phoneN = rd.Next(10000000, 99999999);
+                                string birthDate = rd.Next(1, 32).ToString() + "/" + rd.Next(1, 13).ToString() + "/" + rd.Next(1940, 2003).ToString();
+                                string passWord = "Standard";
+                                float calification = rd.Next(0, 6);
+                                ArrayList products = new ArrayList();
+                                string image = "";
+                                string type = types[rd.Next(0, types.Count)].ToString();
+                                string businessName = "";
+
+                                int ind = 0;
+                                if (num == 0)
+                                {
+                                    while (true)
+                                    {
+                                        bool breaker = true;
+                                        foreach (int element in taken)
+                                        {
+                                            if (element == ind)
+                                            {
+                                                breaker = false;
+                                                break;
+                                            }
+                                               
+                                        }
+                                        if (breaker)
+                                        {
+                                            break;
+                                        }
+                                        ind = rd.Next(0, masculine.Count);
+                                    }
+                                    businessName = type+" El " + masculine[ind];
+                                }
+                                else
+                                {
+                                    while (true)
+                                    {
+                                        bool breaker = true;
+                                        foreach (int element in taken)
+                                        {
+                                            if (element == ind)
+                                            {
+                                                breaker = false;
+                                                break;
+                                            }
+                                                
+                                        }
+                                        if (breaker)
+                                        {
+                                            break;
+                                        }
+                                        ind = rd.Next(0, femenine.Count);
+                                    }
+                                    businessName = type+" La " + femenine[ind];
+                                }
+                                taken.Add(ind);
+                                rd = new Random(counter);
+                                if (type.Equals("Tramo"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://www.tec.ac.cr/sites/default/files/media/img/main/rsz_alimentos_0.jpg", "https://info7rm.blob.core.windows.net.optimalcdn.com/images/2016/11/09/455143_actividad_aconomica.jpg", "https://vistoenlaweb.files.wordpress.com/2012/05/frutas-y-vegetales-1.jpg", "https://cdn.forbes.com.mx/2018/10/alimentos.jpg1_-640x360.jpg", "https://www.3tres3.com/3tres3_common/art/3tres3/44697/home.jpg" };
+
+                                    Product lechuga = new Product(counter, "Lechuga", "Vegetales", cedula, "https://www.ecestaticos.com/image/clipping/f6b43dc70775ade11c69f67bd81ad637/opening.jpg", rd.Next(250, 401), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Tomates", "Vegetales", cedula, "https://www.lavanguardia.com/r/GODO/LV/p4/WebSite/2017/03/28/Recortada/img_ysaiz_20160908-162606_imagenes_lv_getty_istock_22114092_small-k6dG-U421271476554tOF-992x558@LaVanguardia-Web.jpg", rd.Next(500, 1201), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Manzanas", "Frutas", cedula, "https://mundoagropecuario.net/wp-content/uploads/2020/01/roja1-2048x1363-compressed.jpg", rd.Next(1000, 2001), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Berenjena", "Vegetales", cedula, "https://okdiario.com/img/recetas/2016/09/19/berenjenas.jpg", rd.Next(200, 701), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Papas", "Vegetales", cedula, "https://dietamediterranea.com/wp-content/uploads/2018/06/20180625-Papas-ali%C3%B1%C3%A1s-2000x1500.jpg", rd.Next(1000, 1501), "Kilogramo", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                else if (type.Equals("Carniceria"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://elmundo.cr/wp-content/uploads/2016/10/carniceria.jpg", "https://fusteburgas.com/img/contingut/_8.jpg", "https://pbs.twimg.com/media/CVNzk38WwAAGhGT.jpg", "https://blog.cofike.com/wp-content/uploads/2020/04/plan-de-negocio-carnicer%C3%ADa.jpg", "https://static.emisorasunidas.com/uploads/2019/07/WhatsApp-Image-2019-07-30-at-1.34.49-PM.jpeg" };
+
+                                    Product lechuga = new Product(counter, "Bistek", "Carnes", cedula, "https://img.freepik.com/foto-gratis/filete-ternera-crudo-hierbas-especias-carne-res-fresca-cortada-superficie-negra_73523-3013.jpg?size=626&ext=jpg", rd.Next(500, 1001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Chuleta", "Carnes", cedula, "https://okdiario.com/img/recetas/2017/07/25/chuletas-de-cerdo-4.jpg", rd.Next(1000, 1501), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Tortas de Carne", "Carnes", cedula, "https://chefmarketcr.com/image/cache/catalog/productos-chefmarket-ml/actualizacion-completa/carnes-rojas-y-blancas/torta-angus/TortasAnguz7oz-1-800x926.jpg", rd.Next(2000, 3001), "Caja", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Chicharrones", "Carnes", cedula, "https://recetasdepanama.com/wp-content/uploads/2019/03/CHICHARRON.jpg", rd.Next(5000, 9001), "Kilogramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Pollo Entero", "Carnes", cedula, "https://www.godfishsas.com/wp-content/uploads/2020/06/POLLO-EENTERO-24-AGOSTO.jpg", rd.Next(1700, 5001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                else if (type.Equals("Abarrotes"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://www.negociosgarantizados.com/wp-content/uploads/2020/07/music-2806852_960_720-680x380.jpg", "https://64.media.tumblr.com/2a663981JgwSgWMKcX3w6pS1gGzNg5nfcJAGc8/tumblr_nasbve22jr1r0dd5do1_1280.jpg", "https://1.bp.blogspot.com/-k7oREUAgxPo/U6h0xr1f1nI/AAAAAAAAAFA/fW5KqYyb6hE/s1600/abarrotes3.jpg", "https://i.pinimg.com/originals/61/bd/03/61bd03f7b5e6aefbff39afa43320f5cc.jpg", "https://votoenblanco.com.mx/wp-content/uploads/2019/08/Abarrotes2.jpg" };
+
+                                    Product lechuga = new Product(counter, "Sopa Instantanea", "Abarrotes", cedula, "https://www.nutricarrito.com/22412-large_default/sopa-instantanea-maruchan-sabor-pollo-64-g.jpg", rd.Next(150, 301), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Arroz", "Abarrotes", cedula, "https://cdn.shopify.com/s/files/1/1479/5948/products/automercado-granos-arroz8_grande.png?v=1473833184", rd.Next(2000, 4001), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Frijoles", "Abarrotes", cedula, "https://www.peridomicilio.com/images/watermarked/1/detailed/28/7441006005195.jpg", rd.Next(800, 1201), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Enlatados", "Abarrotes", cedula, "https://img.vixdata.io/pd/jpg-large/es/sites/default/files/imj/vivirsalud/5/5-alimentos-enlatados-que-debes-comer-1.jpg", rd.Next(1000, 2001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Conservas", "Abarrotes", cedula, "https://cuidateplus.marca.com/sites/default/files/images/conservasok.jpg", rd.Next(1000, 1501), "Frasco", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                else if (type.Equals("Floristeria"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://empresariados.com/wp-content/2017/04/floristeria-low-cost.jpeg", "https://estaticos.qdq.com/swdata/home_photos/141/141571953/a14c9479932b45da9e864c4fe1ac6014.jpg", "https://cronicaglobal.elespanol.com/uploads/s1/40/71/87/1/flores-y-plantas-colocados-en-maceteros-en-una-floristeria.jpeg", "https://blog.kolau.com/wp-content/uploads/2019/04/estrategias-para-vender-flores-destacada.jpg", "https://i.pinimg.com/originals/02/11/86/021186ae0dce953f2bef700317a56f18.jpg" };
+
+                                    Product lechuga = new Product(counter, "Arreglo Floral", "Varios", cedula, "https://www.azapflores.com/media/catalog/product/a/r/arreglos-florales-a-domicilio-florerias-guadalajara-florerias-en-zapopan-azapflores-dot-com.jpg", rd.Next(15000, 30001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Rosas", "Varios", cedula, "https://i.aquarelle.com/06/images/produits/ramo-rosas-rojas-envio-de-rosas-a-domicilio-550x550-33703.jpg", rd.Next(5000, 10001), "Ramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Girasoles", "Varios", cedula, "https://floresmenta.com/1847-large_default/ramo-de-girasoles.jpg", rd.Next(5000, 10001), "Ramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Tulipanes", "Varios", cedula, "https://ramosydecoraciondeeventos.com/wp-content/uploads/2019/01/arreglos-de-tulipanes-color-rojo-5.jpg", rd.Next(5000, 10001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Orquideas", "Varios", cedula, "https://orquideamania.com/wp-content/uploads/2018/12/orquideas-trepadoras-scaled.jpg", rd.Next(15000, 20001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                else if (type.Equals("Pescaderia"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://mercatperegarau.es/wp-content/uploads/2016/12/315_Francisco-Riera-Llorens-Maria-del-Carmen-del-%C3%81lamo-Acevedo-Peix-Peixateria-Vicenta-Pto-86-87-88_thumb.jpg", "https://mercatperegarau.es/wp-content/uploads/2016/12/360_Peix-Peixateria-Paula-Pto-96-97-98-99_072.jpg", "https://img.freepik.com/foto-gratis/cerca-mariscos-refrigerados-tienda-pescaderia_124271-67.jpg?size=626&ext=jpg", "https://mercatperegarau.es/wp-content/uploads/2016/12/315_Francisco-Riera-Llorens-Maria-del-Carmen-del-%C3%81lamo-Acevedo-Peix-Peixateria-Vicenta-Pto-86-87-88_thumb.jpg", "https://www.larepublica.net/storage/images/2016/03/09/201603091801271.pescaderia.jpg" };
+
+                                    Product lechuga = new Product(counter, "Pescado Entero", "Mariscos", cedula, "https://cdn2.salud180.com/sites/default/files/como-identificar-pescado-mal-estado.jpg", rd.Next(5000, 10001), "Kilogramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Pulpo", "Mariscos", cedula, "https://image.freepik.com/foto-gratis/pulpo-crudo-fresco-mariscos-organicos-vista-superior_89816-6790.jpg", rd.Next(5000, 10001), "Kilogramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Camarones", "Mariscos", cedula, "https://www.mqltv.com/wp-content/uploads/2017/03/ALERTA.jpg", rd.Next(5000, 70001), "Kilogramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Filet de Tilapia", "Mariscos", cedula, "https://www.congeladosartico.com.uy/product/image/large/til1002_1.jpg", rd.Next(1000, 5001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Cangrejo", "Mariscos", cedula, "https://odysseedubienetre.be/img/organic-products/320/can-pregnant-women-eat-crab.jpg", rd.Next(5000, 7001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                else if (type.Equals("Panaderia"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://como-funciona.com/wp-content/uploads/2019/08/c%C3%B3mo-funciona-una-panader%C3%ADa-800x400.jpg", "https://elempresario.mx/sites/default/files/imagecache/nota_completa/panaderias_mexico.jpg", "https://www.seidlaboratory.com.ec/wp-content/uploads/elementor/thumbs/productos-panaderia-1-o0j3tuuop0we13qcmwz2oj9bfnazcxxdq2z8m1w7de.jpg", "https://chilealimentos.com/wp-content/uploads/2018/03/panaderia-y-pasteleria-1.jpg", "https://c.wallhere.com/photos/05/2a/pies_breads_cakes_delicious_milk_baking-622893.jpg!d" };
+
+                                    Product lechuga = new Product(counter, "Baguette", "Panes", cedula, "https://cdn2.salud180.com/sites/default/files/como-identificar-pescado-mal-estado.jpg", rd.Next(300, 501), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Galletas", "Panes", cedula, "https://image.freepik.com/foto-gratis/pulpo-crudo-fresco-mariscos-organicos-vista-superior_89816-6790.jpg", rd.Next(700, 1001), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Gatos", "Panes", cedula, "https://www.mqltv.com/wp-content/uploads/2017/03/ALERTA.jpg", rd.Next(1000, 1501), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Bizcochos", "Panes", cedula, "https://www.congeladosartico.com.uy/product/image/large/til1002_1.jpg", rd.Next(500, 1201), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Pastel de Chocolate", "Panes", cedula, "https://odysseedubienetre.be/img/organic-products/320/can-pregnant-women-eat-crab.jpg", rd.Next(700, 1501), "Porcion", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                Producer p = new Producer(cedula, name, lastName, province, canton, district, address, phoneN, birthDate, phoneN, calification, address, businessName, passWord, image);
+                                p.setProducts(products);
+                                producers.Add(p);
+                                ced++;
+                                Debug.WriteLine(counter);
+                            }
+                        }
+                        dist++;
+                    }
+                }
+                else if (province.Equals("Puntarenas"))
+                {
+                    int dist = 0;
+                    foreach (string canton in puntarenas)
+                    {
+                        ArrayList districts = (ArrayList)punt_dist[dist];
+                        foreach (string district in districts)
+                        {
+                            ArrayList taken = new ArrayList();
+                            for (int i = 0; i < 10; i++)
+                            {
+                                Random rd = new Random();
+                                int num = rd.Next(0, 2);
+                                string name = names[rd.Next(0, names.Count)].ToString();
+                                string lastName = lastNames[rd.Next(0, lastNames.Count)].ToString();
+                                int cedula = ced;
+                                string address = province + "," + canton + "," + district;
+                                int phoneN = rd.Next(10000000, 99999999);
+                                string birthDate = rd.Next(1, 32).ToString() + "/" + rd.Next(1, 13).ToString() + "/" + rd.Next(1940, 2003).ToString();
+                                string passWord = "Standard";
+                                float calification = rd.Next(0, 6);
+                                ArrayList products = new ArrayList();
+                                string image = "";
+                                string type = types[rd.Next(0, types.Count)].ToString();
+                                string businessName = "";
+
+                                int ind = 0;
+                                if (num == 0)
+                                {
+                                    while (true)
+                                    {
+                                        bool breaker = true;
+                                        foreach (int element in taken)
+                                        {
+                                            if (element == ind)
+                                            {
+                                                breaker = false;
+                                                break;
+                                            }
+                                                
+                                        }
+                                        if (breaker)
+                                        {
+                                            break;
+                                        }
+                                        ind = rd.Next(0, masculine.Count);
+                                    }
+                                    businessName = type+" El " + masculine[ind];
+                                }
+                                else
+                                {
+                                    while (true)
+                                    {
+                                        bool breaker = true;
+                                        foreach (int element in taken)
+                                        {
+                                            if (element == ind)
+                                            {
+                                                breaker = false;
+                                                break;
+                                            }
+                                                
+                                        }
+                                        if (breaker)
+                                        {
+                                            break;
+                                        }
+                                        ind = rd.Next(0, femenine.Count);
+                                    }
+                                    businessName = type+" La " + femenine[ind];
+                                }
+                                taken.Add(ind);
+                                rd = new Random(counter);
+                                if (type.Equals("Tramo"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://www.tec.ac.cr/sites/default/files/media/img/main/rsz_alimentos_0.jpg", "https://info7rm.blob.core.windows.net.optimalcdn.com/images/2016/11/09/455143_actividad_aconomica.jpg", "https://vistoenlaweb.files.wordpress.com/2012/05/frutas-y-vegetales-1.jpg", "https://cdn.forbes.com.mx/2018/10/alimentos.jpg1_-640x360.jpg", "https://www.3tres3.com/3tres3_common/art/3tres3/44697/home.jpg" };
+
+                                    Product lechuga = new Product(counter, "Lechuga", "Vegetales", cedula, "https://www.ecestaticos.com/image/clipping/f6b43dc70775ade11c69f67bd81ad637/opening.jpg", rd.Next(250, 401), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Tomates", "Vegetales", cedula, "https://www.lavanguardia.com/r/GODO/LV/p4/WebSite/2017/03/28/Recortada/img_ysaiz_20160908-162606_imagenes_lv_getty_istock_22114092_small-k6dG-U421271476554tOF-992x558@LaVanguardia-Web.jpg", rd.Next(500, 1201), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Manzanas", "Frutas", cedula, "https://mundoagropecuario.net/wp-content/uploads/2020/01/roja1-2048x1363-compressed.jpg", rd.Next(1000, 2001), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Berenjena", "Vegetales", cedula, "https://okdiario.com/img/recetas/2016/09/19/berenjenas.jpg", rd.Next(200, 701), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Papas", "Vegetales", cedula, "https://dietamediterranea.com/wp-content/uploads/2018/06/20180625-Papas-ali%C3%B1%C3%A1s-2000x1500.jpg", rd.Next(1000, 1501), "Kilogramo", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                else if (type.Equals("Carniceria"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://elmundo.cr/wp-content/uploads/2016/10/carniceria.jpg", "https://fusteburgas.com/img/contingut/_8.jpg", "https://pbs.twimg.com/media/CVNzk38WwAAGhGT.jpg", "https://blog.cofike.com/wp-content/uploads/2020/04/plan-de-negocio-carnicer%C3%ADa.jpg", "https://static.emisorasunidas.com/uploads/2019/07/WhatsApp-Image-2019-07-30-at-1.34.49-PM.jpeg" };
+
+                                    Product lechuga = new Product(counter, "Bistek", "Carnes", cedula, "https://img.freepik.com/foto-gratis/filete-ternera-crudo-hierbas-especias-carne-res-fresca-cortada-superficie-negra_73523-3013.jpg?size=626&ext=jpg", rd.Next(500, 1001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Chuleta", "Carnes", cedula, "https://okdiario.com/img/recetas/2017/07/25/chuletas-de-cerdo-4.jpg", rd.Next(1000, 1501), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Tortas de Carne", "Carnes", cedula, "https://chefmarketcr.com/image/cache/catalog/productos-chefmarket-ml/actualizacion-completa/carnes-rojas-y-blancas/torta-angus/TortasAnguz7oz-1-800x926.jpg", rd.Next(2000, 3001), "Caja", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Chicharrones", "Carnes", cedula, "https://recetasdepanama.com/wp-content/uploads/2019/03/CHICHARRON.jpg", rd.Next(5000, 9001), "Kilogramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Pollo Entero", "Carnes", cedula, "https://www.godfishsas.com/wp-content/uploads/2020/06/POLLO-EENTERO-24-AGOSTO.jpg", rd.Next(1700, 5001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                else if (type.Equals("Abarrotes"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://www.negociosgarantizados.com/wp-content/uploads/2020/07/music-2806852_960_720-680x380.jpg", "https://64.media.tumblr.com/2a663981JgwSgWMKcX3w6pS1gGzNg5nfcJAGc8/tumblr_nasbve22jr1r0dd5do1_1280.jpg", "https://1.bp.blogspot.com/-k7oREUAgxPo/U6h0xr1f1nI/AAAAAAAAAFA/fW5KqYyb6hE/s1600/abarrotes3.jpg", "https://i.pinimg.com/originals/61/bd/03/61bd03f7b5e6aefbff39afa43320f5cc.jpg", "https://votoenblanco.com.mx/wp-content/uploads/2019/08/Abarrotes2.jpg" };
+
+                                    Product lechuga = new Product(counter, "Sopa Instantanea", "Abarrotes", cedula, "https://www.nutricarrito.com/22412-large_default/sopa-instantanea-maruchan-sabor-pollo-64-g.jpg", rd.Next(150, 301), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Arroz", "Abarrotes", cedula, "https://cdn.shopify.com/s/files/1/1479/5948/products/automercado-granos-arroz8_grande.png?v=1473833184", rd.Next(2000, 4001), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Frijoles", "Abarrotes", cedula, "https://www.peridomicilio.com/images/watermarked/1/detailed/28/7441006005195.jpg", rd.Next(800, 1201), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Enlatados", "Abarrotes", cedula, "https://img.vixdata.io/pd/jpg-large/es/sites/default/files/imj/vivirsalud/5/5-alimentos-enlatados-que-debes-comer-1.jpg", rd.Next(1000, 2001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Conservas", "Abarrotes", cedula, "https://cuidateplus.marca.com/sites/default/files/images/conservasok.jpg", rd.Next(1000, 1501), "Frasco", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                else if (type.Equals("Floristeria"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://empresariados.com/wp-content/2017/04/floristeria-low-cost.jpeg", "https://estaticos.qdq.com/swdata/home_photos/141/141571953/a14c9479932b45da9e864c4fe1ac6014.jpg", "https://cronicaglobal.elespanol.com/uploads/s1/40/71/87/1/flores-y-plantas-colocados-en-maceteros-en-una-floristeria.jpeg", "https://blog.kolau.com/wp-content/uploads/2019/04/estrategias-para-vender-flores-destacada.jpg", "https://i.pinimg.com/originals/02/11/86/021186ae0dce953f2bef700317a56f18.jpg" };
+
+                                    Product lechuga = new Product(counter, "Arreglo Floral", "Varios", cedula, "https://www.azapflores.com/media/catalog/product/a/r/arreglos-florales-a-domicilio-florerias-guadalajara-florerias-en-zapopan-azapflores-dot-com.jpg", rd.Next(15000, 30001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Rosas", "Varios", cedula, "https://i.aquarelle.com/06/images/produits/ramo-rosas-rojas-envio-de-rosas-a-domicilio-550x550-33703.jpg", rd.Next(5000, 10001), "Ramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Girasoles", "Varios", cedula, "https://floresmenta.com/1847-large_default/ramo-de-girasoles.jpg", rd.Next(5000, 10001), "Ramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Tulipanes", "Varios", cedula, "https://ramosydecoraciondeeventos.com/wp-content/uploads/2019/01/arreglos-de-tulipanes-color-rojo-5.jpg", rd.Next(5000, 10001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Orquideas", "Varios", cedula, "https://orquideamania.com/wp-content/uploads/2018/12/orquideas-trepadoras-scaled.jpg", rd.Next(15000, 20001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                else if (type.Equals("Pescaderia"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://mercatperegarau.es/wp-content/uploads/2016/12/315_Francisco-Riera-Llorens-Maria-del-Carmen-del-%C3%81lamo-Acevedo-Peix-Peixateria-Vicenta-Pto-86-87-88_thumb.jpg", "https://mercatperegarau.es/wp-content/uploads/2016/12/360_Peix-Peixateria-Paula-Pto-96-97-98-99_072.jpg", "https://img.freepik.com/foto-gratis/cerca-mariscos-refrigerados-tienda-pescaderia_124271-67.jpg?size=626&ext=jpg", "https://mercatperegarau.es/wp-content/uploads/2016/12/315_Francisco-Riera-Llorens-Maria-del-Carmen-del-%C3%81lamo-Acevedo-Peix-Peixateria-Vicenta-Pto-86-87-88_thumb.jpg", "https://www.larepublica.net/storage/images/2016/03/09/201603091801271.pescaderia.jpg" };
+
+                                    Product lechuga = new Product(counter, "Pescado Entero", "Mariscos", cedula, "https://cdn2.salud180.com/sites/default/files/como-identificar-pescado-mal-estado.jpg", rd.Next(5000, 10001), "Kilogramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Pulpo", "Mariscos", cedula, "https://image.freepik.com/foto-gratis/pulpo-crudo-fresco-mariscos-organicos-vista-superior_89816-6790.jpg", rd.Next(5000, 10001), "Kilogramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Camarones", "Mariscos", cedula, "https://www.mqltv.com/wp-content/uploads/2017/03/ALERTA.jpg", rd.Next(5000, 70001), "Kilogramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Filet de Tilapia", "Mariscos", cedula, "https://www.congeladosartico.com.uy/product/image/large/til1002_1.jpg", rd.Next(1000, 5001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Cangrejo", "Mariscos", cedula, "https://odysseedubienetre.be/img/organic-products/320/can-pregnant-women-eat-crab.jpg", rd.Next(5000, 7001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                else if (type.Equals("Panaderia"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://como-funciona.com/wp-content/uploads/2019/08/c%C3%B3mo-funciona-una-panader%C3%ADa-800x400.jpg", "https://elempresario.mx/sites/default/files/imagecache/nota_completa/panaderias_mexico.jpg", "https://www.seidlaboratory.com.ec/wp-content/uploads/elementor/thumbs/productos-panaderia-1-o0j3tuuop0we13qcmwz2oj9bfnazcxxdq2z8m1w7de.jpg", "https://chilealimentos.com/wp-content/uploads/2018/03/panaderia-y-pasteleria-1.jpg", "https://c.wallhere.com/photos/05/2a/pies_breads_cakes_delicious_milk_baking-622893.jpg!d" };
+
+                                    Product lechuga = new Product(counter, "Baguette", "Panes", cedula, "https://i.ytimg.com/vi/s4CcSPbLto8/maxresdefault.jpg", rd.Next(300, 501), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Galletas", "Panes", cedula, "https://www.dulcesideas.net/images/galle1.jpg", rd.Next(700, 1001), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Gatos", "Panes", cedula, "https://tipscr.com/hogar/img/cms/gaticos.png", rd.Next(1000, 1501), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Bizcochos", "Panes", cedula, "https://bizcochosame.com/wp-content/uploads/2017/03/23082016-DSC_0234.jpg", rd.Next(500, 1201), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Pastel de Chocolate", "Panes", cedula, "https://media.cnnchile.com/2019/02/pasteldechocolateconcoca.jpg", rd.Next(700, 1501), "Porcion", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                Producer p = new Producer(cedula, name, lastName, province, canton, district, address, phoneN, birthDate, phoneN, calification, address, businessName, passWord, image);
+                                p.setProducts(products);
+                                producers.Add(p);
+                                ced++;
+                                Debug.WriteLine(counter);
+                            }
+                        }
+                        dist++;
+
+                    }
+                }
+                else if (province.Equals("Limon"))
+                {
+                    int dist = 0;
+                    foreach (string canton in limon)
+                    {
+                        ArrayList districts = (ArrayList)limon_dist[dist];
+                        foreach (string district in districts)
+                        {
+                            ArrayList taken = new ArrayList();
+                            for (int i = 0; i < 10; i++)
+                            {
+                                Random rd = new Random();
+                                int num = rd.Next(0, 2);
+                                string name = names[rd.Next(0, names.Count)].ToString();
+                                string lastName = lastNames[rd.Next(0, lastNames.Count)].ToString();
+                                int cedula = ced;
+                                string address = province + "," + canton + "," + district;
+                                int phoneN = rd.Next(10000000, 99999999);
+                                string birthDate = rd.Next(1, 32).ToString() + "/" + rd.Next(1, 13).ToString() + "/" + rd.Next(1940, 2003).ToString();
+                                string passWord = "Standard";
+                                float calification = rd.Next(0, 6);
+                                ArrayList products = new ArrayList();
+                                string image = "";
+                                string type = types[rd.Next(0, types.Count)].ToString();
+                                string businessName = "";
+
+                                int ind = 0;
+                                if (num == 0)
+                                {
+                                    while (true)
+                                    {
+                                        bool breaker = true;
+                                        foreach (int element in taken)
+                                        {
+                                            if (element == ind)
+                                            {
+                                                breaker = false;
+                                                break;
+                                            }
+                                                
+                                        }
+                                        if (breaker)
+                                        {
+                                            break;
+                                        }
+                                        ind = rd.Next(0, masculine.Count);
+                                    }
+                                    businessName = type+" El " + masculine[ind];
+                                }
+                                else
+                                {
+                                    while (true)
+                                    {
+                                        bool breaker = true;
+                                        foreach (int element in taken)
+                                        {
+                                            if (element == ind)
+                                            {
+                                                breaker = false;
+                                                break;
+                                            }
+                                                
+                                        }
+                                        if (breaker)
+                                        {
+                                            break;
+                                        }
+                                        ind = rd.Next(0, femenine.Count);
+                                    }
+                                    businessName = type+" La " + femenine[ind];
+                                }
+                                taken.Add(ind);
+                                rd = new Random(counter);
+                                if (type.Equals("Tramo"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://www.tec.ac.cr/sites/default/files/media/img/main/rsz_alimentos_0.jpg", "https://info7rm.blob.core.windows.net.optimalcdn.com/images/2016/11/09/455143_actividad_aconomica.jpg", "https://vistoenlaweb.files.wordpress.com/2012/05/frutas-y-vegetales-1.jpg", "https://cdn.forbes.com.mx/2018/10/alimentos.jpg1_-640x360.jpg", "https://www.3tres3.com/3tres3_common/art/3tres3/44697/home.jpg" };
+
+                                    Product lechuga = new Product(counter, "Lechuga", "Vegetales", cedula, "https://www.ecestaticos.com/image/clipping/f6b43dc70775ade11c69f67bd81ad637/opening.jpg", rd.Next(250, 401), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Tomates", "Vegetales", cedula, "https://www.lavanguardia.com/r/GODO/LV/p4/WebSite/2017/03/28/Recortada/img_ysaiz_20160908-162606_imagenes_lv_getty_istock_22114092_small-k6dG-U421271476554tOF-992x558@LaVanguardia-Web.jpg", rd.Next(500, 1201), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Manzanas", "Frutas", cedula, "https://mundoagropecuario.net/wp-content/uploads/2020/01/roja1-2048x1363-compressed.jpg", rd.Next(1000, 2001), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Berenjena", "Vegetales", cedula, "https://okdiario.com/img/recetas/2016/09/19/berenjenas.jpg", rd.Next(200, 701), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Papas", "Vegetales", cedula, "https://dietamediterranea.com/wp-content/uploads/2018/06/20180625-Papas-ali%C3%B1%C3%A1s-2000x1500.jpg", rd.Next(1000, 1501), "Kilogramo", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                else if (type.Equals("Carniceria"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://elmundo.cr/wp-content/uploads/2016/10/carniceria.jpg", "https://fusteburgas.com/img/contingut/_8.jpg", "https://pbs.twimg.com/media/CVNzk38WwAAGhGT.jpg", "https://blog.cofike.com/wp-content/uploads/2020/04/plan-de-negocio-carnicer%C3%ADa.jpg", "https://static.emisorasunidas.com/uploads/2019/07/WhatsApp-Image-2019-07-30-at-1.34.49-PM.jpeg" };
+
+                                    Product lechuga = new Product(counter, "Bistek", "Carnes", cedula, "https://img.freepik.com/foto-gratis/filete-ternera-crudo-hierbas-especias-carne-res-fresca-cortada-superficie-negra_73523-3013.jpg?size=626&ext=jpg", rd.Next(500, 1001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Chuleta", "Carnes", cedula, "https://okdiario.com/img/recetas/2017/07/25/chuletas-de-cerdo-4.jpg", rd.Next(1000, 1501), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Tortas de Carne", "Carnes", cedula, "https://chefmarketcr.com/image/cache/catalog/productos-chefmarket-ml/actualizacion-completa/carnes-rojas-y-blancas/torta-angus/TortasAnguz7oz-1-800x926.jpg", rd.Next(2000, 3001), "Caja", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Chicharrones", "Carnes", cedula, "https://recetasdepanama.com/wp-content/uploads/2019/03/CHICHARRON.jpg", rd.Next(5000, 9001), "Kilogramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Pollo Entero", "Carnes", cedula, "https://www.godfishsas.com/wp-content/uploads/2020/06/POLLO-EENTERO-24-AGOSTO.jpg", rd.Next(1700, 5001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                else if (type.Equals("Abarrotes"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://www.negociosgarantizados.com/wp-content/uploads/2020/07/music-2806852_960_720-680x380.jpg", "https://64.media.tumblr.com/2a663981JgwSgWMKcX3w6pS1gGzNg5nfcJAGc8/tumblr_nasbve22jr1r0dd5do1_1280.jpg", "https://1.bp.blogspot.com/-k7oREUAgxPo/U6h0xr1f1nI/AAAAAAAAAFA/fW5KqYyb6hE/s1600/abarrotes3.jpg", "https://i.pinimg.com/originals/61/bd/03/61bd03f7b5e6aefbff39afa43320f5cc.jpg", "https://votoenblanco.com.mx/wp-content/uploads/2019/08/Abarrotes2.jpg" };
+
+                                    Product lechuga = new Product(counter, "Sopa Instantanea", "Abarrotes", cedula, "https://www.nutricarrito.com/22412-large_default/sopa-instantanea-maruchan-sabor-pollo-64-g.jpg", rd.Next(150, 301), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Arroz", "Abarrotes", cedula, "https://cdn.shopify.com/s/files/1/1479/5948/products/automercado-granos-arroz8_grande.png?v=1473833184", rd.Next(2000, 4001), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Frijoles", "Abarrotes", cedula, "https://www.peridomicilio.com/images/watermarked/1/detailed/28/7441006005195.jpg", rd.Next(800, 1201), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Enlatados", "Abarrotes", cedula, "https://img.vixdata.io/pd/jpg-large/es/sites/default/files/imj/vivirsalud/5/5-alimentos-enlatados-que-debes-comer-1.jpg", rd.Next(1000, 2001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Conservas", "Abarrotes", cedula, "https://cuidateplus.marca.com/sites/default/files/images/conservasok.jpg", rd.Next(1000, 1501), "Frasco", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                else if (type.Equals("Floristeria"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://empresariados.com/wp-content/2017/04/floristeria-low-cost.jpeg", "https://estaticos.qdq.com/swdata/home_photos/141/141571953/a14c9479932b45da9e864c4fe1ac6014.jpg", "https://cronicaglobal.elespanol.com/uploads/s1/40/71/87/1/flores-y-plantas-colocados-en-maceteros-en-una-floristeria.jpeg", "https://blog.kolau.com/wp-content/uploads/2019/04/estrategias-para-vender-flores-destacada.jpg", "https://i.pinimg.com/originals/02/11/86/021186ae0dce953f2bef700317a56f18.jpg" };
+
+                                    Product lechuga = new Product(counter, "Arreglo Floral", "Varios", cedula, "https://www.azapflores.com/media/catalog/product/a/r/arreglos-florales-a-domicilio-florerias-guadalajara-florerias-en-zapopan-azapflores-dot-com.jpg", rd.Next(15000, 30001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Rosas", "Varios", cedula, "https://i.aquarelle.com/06/images/produits/ramo-rosas-rojas-envio-de-rosas-a-domicilio-550x550-33703.jpg", rd.Next(5000, 10001), "Ramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Girasoles", "Varios", cedula, "https://floresmenta.com/1847-large_default/ramo-de-girasoles.jpg", rd.Next(5000, 10001), "Ramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Tulipanes", "Varios", cedula, "https://ramosydecoraciondeeventos.com/wp-content/uploads/2019/01/arreglos-de-tulipanes-color-rojo-5.jpg", rd.Next(5000, 10001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Orquideas", "Varios", cedula, "https://orquideamania.com/wp-content/uploads/2018/12/orquideas-trepadoras-scaled.jpg", rd.Next(15000, 20001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                else if (type.Equals("Pescaderia"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://mercatperegarau.es/wp-content/uploads/2016/12/315_Francisco-Riera-Llorens-Maria-del-Carmen-del-%C3%81lamo-Acevedo-Peix-Peixateria-Vicenta-Pto-86-87-88_thumb.jpg", "https://mercatperegarau.es/wp-content/uploads/2016/12/360_Peix-Peixateria-Paula-Pto-96-97-98-99_072.jpg", "https://img.freepik.com/foto-gratis/cerca-mariscos-refrigerados-tienda-pescaderia_124271-67.jpg?size=626&ext=jpg", "https://mercatperegarau.es/wp-content/uploads/2016/12/315_Francisco-Riera-Llorens-Maria-del-Carmen-del-%C3%81lamo-Acevedo-Peix-Peixateria-Vicenta-Pto-86-87-88_thumb.jpg", "https://www.larepublica.net/storage/images/2016/03/09/201603091801271.pescaderia.jpg" };
+
+                                    Product lechuga = new Product(counter, "Pescado Entero", "Mariscos", cedula, "https://cdn2.salud180.com/sites/default/files/como-identificar-pescado-mal-estado.jpg", rd.Next(5000, 10001), "Kilogramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Pulpo", "Mariscos", cedula, "https://image.freepik.com/foto-gratis/pulpo-crudo-fresco-mariscos-organicos-vista-superior_89816-6790.jpg", rd.Next(5000, 10001), "Kilogramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Camarones", "Mariscos", cedula, "https://www.mqltv.com/wp-content/uploads/2017/03/ALERTA.jpg", rd.Next(5000, 70001), "Kilogramo", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Filet de Tilapia", "Mariscos", cedula, "https://www.congeladosartico.com.uy/product/image/large/til1002_1.jpg", rd.Next(1000, 5001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Cangrejo", "Mariscos", cedula, "https://odysseedubienetre.be/img/organic-products/320/can-pregnant-women-eat-crab.jpg", rd.Next(5000, 7001), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                else if (type.Equals("Panaderia"))
+                                {
+
+                                    ArrayList images = new ArrayList() { "https://como-funciona.com/wp-content/uploads/2019/08/c%C3%B3mo-funciona-una-panader%C3%ADa-800x400.jpg", "https://elempresario.mx/sites/default/files/imagecache/nota_completa/panaderias_mexico.jpg", "https://www.seidlaboratory.com.ec/wp-content/uploads/elementor/thumbs/productos-panaderia-1-o0j3tuuop0we13qcmwz2oj9bfnazcxxdq2z8m1w7de.jpg", "https://chilealimentos.com/wp-content/uploads/2018/03/panaderia-y-pasteleria-1.jpg", "https://c.wallhere.com/photos/05/2a/pies_breads_cakes_delicious_milk_baking-622893.jpg!d" };
+
+                                    Product lechuga = new Product(counter, "Baguette", "Panes", cedula, "https://i.ytimg.com/vi/s4CcSPbLto8/maxresdefault.jpg", rd.Next(300, 501), "Unitario", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product tomates = new Product(counter, "Galletas", "Panes", cedula, "https://www.dulcesideas.net/images/galle1.jpg", rd.Next(700, 1001), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product manzanas = new Product(counter, "Gatos", "Panes", cedula, "https://tipscr.com/hogar/img/cms/gaticos.png", rd.Next(1000, 1501), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product berenjena = new Product(counter, "Bizcochos", "Panes", cedula, "https://bizcochosame.com/wp-content/uploads/2017/03/23082016-DSC_0234.jpg", rd.Next(500, 1201), "Bolsa", rd.Next(0, 40), 0);
+                                    counter++;
+                                    Product papas = new Product(counter, "Pastel de Chocolate", "Panes", cedula, "https://media.cnnchile.com/2019/02/pasteldechocolateconcoca.jpg", rd.Next(700, 1501), "Porcion", rd.Next(0, 40), 0);
+                                    counter++;
+
+                                    products.Add(lechuga);
+                                    products.Add(tomates);
+                                    products.Add(manzanas);
+                                    products.Add(berenjena);
+                                    products.Add(papas);
+
+                                    image = images[rd.Next(0, images.Count)].ToString();
+
+
+                                }
+
+                                Producer p = new Producer(cedula, name, lastName, province, canton, district, address, phoneN, birthDate, phoneN, calification, address, businessName, passWord, image);
+                                p.setProducts(products);
+                                producers.Add(p);
+                                ced++;
+                                Debug.WriteLine(counter);
+                            }
+                        }
+                        dist++;
+
+                    }
+                }
+            }
+            counter = 0;
+            foreach(Producer form in producers)
+            {
+                try
+                {
+                    string sqlString = "INSERT INTO productores (Cedula,Nombre,Apellidos,nombreNegocio,Provincia,Canton,Distrito,Direccion,Telefono,Fecha_Nacimiento,Num_Sinpe,Lugares_Entrega,Calificacion,Password,Imagen) VALUES (" + form.cedula.ToString() + ",'" + form.name + "','" + form.lastName + "','" + form.businessName + "','" + form.province + "','" + form.canton + "','" + form.district + "','" + form.address + "'," + form.phoneN.ToString() + ",'" + form.birthDate + "'," + form.sinpeN.ToString() + ",'',5,'" + form.getPassword() + "','" + form.image + "')";
+                    MySql.Data.MySqlClient.MySqlCommand cmd = new MySql.Data.MySqlClient.MySqlCommand(sqlString, connection);
+                    cmd.ExecuteNonQuery();
+
+                    string token = Convert.ToBase64String(Guid.NewGuid().ToByteArray());
+                    sqlString = "INSERT INTO tokens (Usuario,Token,Tipo) VALUES (" + form.cedula.ToString() + ",'" + token + "','productores')";
+                    cmd = new MySql.Data.MySqlClient.MySqlCommand(sqlString, connection);
+                    cmd.ExecuteNonQuery();
+                }
+                catch(MySql.Data.MySqlClient.MySqlException e)
+                {
+
+                }
+                foreach (Product product in form.products)
+                {
+                    string sqlString = "INSERT INTO productos (ID,Nombre,Categoria,Productor,Foto,Precio,Modo_Venta,Disponibilidad,Ganancias) VALUES (" + product.id.ToString() + ",'" + product.name + "','" + product.category + "'," + product.producer.ToString() + ",'" + product.image + "'," + product.cost.ToString() + ",'" + product.saleMode + "'," + product.inStock.ToString() + "," + product.profits.ToString() + ")";
+                    MySql.Data.MySqlClient.MySqlCommand cmd = new MySql.Data.MySqlClient.MySqlCommand(sqlString, connection);
+                    cmd.ExecuteNonQuery();
+                }
+                Debug.WriteLine(counter);
+                counter++;
+      
+            }
+            int test = 0;
+        }
