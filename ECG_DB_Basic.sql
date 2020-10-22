@@ -58,6 +58,7 @@ CREATE TABLE IF NOT EXISTS `ELCHINOGRANJERO`.`CLIENTES` (
   `Usuario` VARCHAR(15) NOT NULL,
   `Password` VARCHAR(500) NOT NULL,
   `Salt` VARCHAR(32),
+  `Compras` INT NOT NULL,
   PRIMARY KEY (`Cedula`),
   UNIQUE INDEX `Cedula_UNIQUE` (`Cedula` ASC) VISIBLE,
   UNIQUE INDEX `Usuario_UNIQUE` (`Usuario` ASC) VISIBLE)
@@ -97,8 +98,8 @@ CREATE TABLE IF NOT EXISTS `ELCHINOGRANJERO`.`PRODUCTOS` (
   CONSTRAINT `ID_Productor`
     FOREIGN KEY (`Productor`)
     REFERENCES `ELCHINOGRANJERO`.`PRODUCTORES` (`Cedula`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
+    ON DELETE CASCADE
+    ON UPDATE CASCADE,
   CONSTRAINT `Categorias`
     FOREIGN KEY (`Categoria`)
     REFERENCES `ELCHINOGRANJERO`.`CATEGORIAS` (`ID`)
@@ -210,3 +211,4 @@ INSERT INTO categorias (ID,Nombre) VALUES (4,"Varios");
 INSERT INTO categorias (ID,Nombre) VALUES (5,"Mariscos");
 INSERT INTO categorias (ID,Nombre) VALUES (6,"Panes");
 INSERT INTO categorias (ID,Nombre) VALUES (7,"Frutas");
+INSERT INTO categorias (ID,Nombre) VALUES (8,"Cochinadas");
