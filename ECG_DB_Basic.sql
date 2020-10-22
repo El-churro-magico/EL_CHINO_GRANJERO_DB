@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `ELCHINOGRANJERO`.`PRODUCTORES` (
   `nombreNegocio` VARCHAR(150) NOT NULL,
   `Password` VARCHAR(500) NOT NULL,
   `Salt` VARCHAR(32),
-  `Imagen` VARCHAR(200) NULL DEFAULT 'https://i.imgur.com/fj91AfX.jpeg',
+  `Imagen` VARCHAR(500) NULL DEFAULT 'https://www.freevector.com/uploads/vector/preview/28772/Red_Japanese_Wave_Seamless_Pattern.jpg',
   PRIMARY KEY (`Cedula`),
   UNIQUE INDEX `Cedula_UNIQUE` (`Cedula` ASC) VISIBLE)
 ENGINE = InnoDB;
